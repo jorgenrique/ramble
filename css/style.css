@@ -1,0 +1,68 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	background: -webkit-linear-gradient(#fff,#ddd); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(#fff,#ddd); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(#fff,#ddd); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#fff,#ddd); /* Standard syntax */
+}
+.left{float:left;}
+.right{float:right;}
+img{width:100%;}
+header{
+	border-bottom:2px solid #7A0FCE;
+	overflow:hidden;
+	height:72px;
+}
+header .navbar-header h1{
+	margin:10px 0;
+	content:"";
+}
+header nav{
+	color:white;
+}
+header nav ul.nav{
+	float:right;
+}
+header nav ul.nav li{
+	margin:10px 0 10px 20px;
+	line-height:50px;
+}
+
+footer{
+	border-top:2px solid #7A0FCE;
+}
+
+
+
+
+
+/***** BOOTSTRAP NAV *****/
+.navbar-toggle .icon-bar:nth-of-type(2) {
+	  top: 1px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+  	top: 2px;
+}
+
+.navbar-toggle .icon-bar {
+	  position: relative;
+	  transition: all 500ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+	  top: 6px;
+	  transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+	  background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+	  top: -6px;
+	  transform: rotate(-45deg);
+}
