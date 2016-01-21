@@ -1,0 +1,63 @@
+a{
+    color:$purple;
+    text-decoration:none;
+    &:hover{
+        color:$pink;
+    }
+}
+.oswald{
+    font-family: 'Oswald', sans-serif;
+    font-weight:400;
+}
+.oswald h3{
+    font-family:inherit;
+}
+.roboto-thin{
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+}
+.roboto-thick{
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+}
+h1,
+.t-h1{
+    font-family: 'Oswald', sans-serif;
+    font-size:4rem;
+}
+.mobile h1{
+    font-size:3.5rem;
+}
+h2,
+.t-h2{
+    font-family: 'Oswald', sans-serif;
+    font-size:3rem;
+}
+.mobile h2{
+    font-size:2.5rem;
+}
+h3,
+.t-h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    font-size:2rem;
+}
+.mobile h3{
+    font-size:1.5rem;
+    font-weight:500;
+}
+h4,
+.t-h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    font-size:1.5rem;
+}
+.mobile h4{
+    font-size:1.5rem;
+}
+p{
+    max-width:600px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    font-size:1rem;
+}

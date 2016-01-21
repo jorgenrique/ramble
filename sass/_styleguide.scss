@@ -1,0 +1,130 @@
+div{
+    margin-bottom:1rem;
+}
+.big-margin{margin:3rem 0 2rem;}
+.small-margin{margin:1rem 0;}
+hr{
+    background-color:$blue-light;
+    height: 1px;
+    border:0;
+}
+.mid-width{width:600px;}
+.cta{
+    font-size:1rem;
+    padding:1rem 2rem;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-align:center;
+    cursor:pointer;
+    max-width:300px;
+    min-width:100px;
+    width:auto;
+}
+.cta.main{
+    background-color:$purple;;
+    color:$white;;
+    border:3px solid $purple;;
+}
+.cta.main:hover{
+    background-color:$white;
+    color:$purple;;
+}
+.cta.main:active{
+    background-color:$grey-light;
+}
+.cta.secondary{
+    border:3px solid $blue-light;
+    background-color:$blue-light;
+    color:$white;
+    &:hover{
+        background-color:$white;
+        color:$blue-light;
+    }
+    &:active{
+        background-color:$grey-light;
+    }
+}
+
+form label{
+    width:200px;
+    float:left;
+}
+input[type="checkbox"],input[type="radio"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin:0 4px 0 1rem;
+    vertical-align:middle;
+    background:url(../img/icon-sprite.png) -40px top no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background:url(../img/icon-sprite.png) -60px top no-repeat;
+}
+input[type="radio"] + label span {
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin:0 4px 0 1rem;
+    vertical-align:middle;
+    background:url(../img/icon-sprite.png) -20px top no-repeat;
+}
+input[type="radio"]:checked + label span {
+    background:url(../img/icon-sprite.png) left top no-repeat;
+}
+input,textarea,label,select{
+    font-size:1rem;
+    margin:1em 0;
+}
+input[type='submit']{
+    padding:.5rem 2rem;
+}
+input[type='text'],textarea{
+    padding: 1rem .6rem;
+    border: 3px solid $purple;
+    background:$white;
+    color:$purple;
+}
+.error{
+    border:3px solid $red !important;
+    color:$red !important;
+    position:relative;
+}
+.valid{
+    border:3px solid $blue-light !important;
+    color:$blue-light !important;
+}
+textarea{
+    max-width:600px;
+    width:80%;
+    height:10rem;;
+}
+.selector_cont label{
+    float:none;
+}
+.left{float:left;}
+.right{float:right;}
+.flex{
+    display:-webkit-flex;
+    display:flex;
+}
+.full{
+    width:100%;
+}
+.colors{
+    -webkit-justify-content:flex-start;
+    justify-content:flex-start;
+}
+.color{margin-right:1rem;}
+.circle{
+    width:100px;
+    height:100px;
+    border-radius:50px;
+}
+footer{
+    min-height:100px;
+}
