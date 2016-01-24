@@ -15,6 +15,9 @@
 .purple-bg {
   background-color: #64296d; }
 
+.purple-bg-op {
+  background-color: rgba(100, 41, 109, 0.4); }
+
 .blue-dark {
   color: #186c73; }
 
@@ -38,6 +41,12 @@
 
 .grey-bg {
   background-color: #b7b7b7; }
+
+.grey-light {
+  color: #eee; }
+
+.grey-light-bg {
+  background-color: #eee; }
 
 .pink {
   color: #a378a6; }
@@ -69,7 +78,8 @@ a {
 h1,
 .t-h1 {
   font-family: 'Oswald', sans-serif;
-  font-size: 4rem; }
+  font-size: 4rem;
+  margin-bottom: 1rem; }
 
 .mobile h1 {
   font-size: 3.5rem; }
@@ -77,7 +87,8 @@ h1,
 h2,
 .t-h2 {
   font-family: 'Oswald', sans-serif;
-  font-size: 3rem; }
+  font-size: 3rem;
+  margin-bottom: 1rem; }
 
 .mobile h2 {
   font-size: 2.5rem; }
@@ -86,7 +97,8 @@ h3,
 .t-h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 2rem; }
+  font-size: 2rem;
+  margin-bottom: 1rem; }
 
 .mobile h3 {
   font-size: 1.5rem;
@@ -96,7 +108,8 @@ h4,
 .t-h4 {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  margin-bottom: 1rem; }
 
 .mobile h4 {
   font-size: 1.5rem; }
@@ -105,9 +118,7 @@ p {
   max-width: 600px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 1rem; }
-
-div {
+  font-size: 1rem;
   margin-bottom: 1rem; }
 
 .big-margin {
@@ -115,6 +126,9 @@ div {
 
 .small-margin {
   margin: 1rem 0; }
+
+.move-left {
+  margin-left: 1rem; }
 
 hr {
   background-color: #2ab6c4;
@@ -126,14 +140,13 @@ hr {
 
 .cta {
   font-size: 1rem;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   text-align: center;
   cursor: pointer;
-  max-width: 300px;
-  min-width: 100px;
+  max-width: 200px;
   width: auto; }
 
 .cta.main {
@@ -142,8 +155,7 @@ hr {
   border: 3px solid #64296d; }
 
 .cta.main:hover {
-  background-color: #fff;
-  color: #64296d; }
+  background-color: transparent; }
 
 .cta.main:active {
   background-color: #eee; }
@@ -153,10 +165,9 @@ hr {
   background-color: #2ab6c4;
   color: #fff; }
   .cta.secondary:hover {
-    background-color: #fff;
-    color: #2ab6c4; }
+    background-color: transparent; }
   .cta.secondary:active {
-    background-color: #eee; }
+    background-color: rgba(238, 238, 238, 0.4); }
 
 form label {
   width: 200px;
@@ -243,9 +254,13 @@ textarea {
   height: 100px;
   border-radius: 50px; }
 
+html {
+  font-size: 16px; }
+
 body {
   font-family: 'Roboto',sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 14px; }
 
 .left {
   float: left; }
@@ -265,16 +280,13 @@ ul {
 header {
   overflow: hidden;
   padding: 1rem; }
-  header nav {
-    color: white; }
-    header nav ul.nav {
-      width: 60%;
-      margin: 2rem auto 0; }
-    header nav ul.nav li {
-      line-height: 50px;
-      text-align: center;
-      width: 100%;
-      color: #fff; }
+  header nav ul.nav {
+    margin: 2rem 0; }
+  header nav ul.nav li {
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+    color: #2ab6c4; }
   header .navbar-inverse {
     background-color: #64296d;
     color: #2ab6c4; }
@@ -286,7 +298,7 @@ header {
         background-color: #2ab6c4; }
     header .navbar-inverse .navbar-collapse,
     header .navbar-inverse .navbar-form {
-      border-color: #2ab6c4; }
+      border-color: #fff; }
   header .navbar-brand {
     height: 60px; }
     header .navbar-brand img {
@@ -318,13 +330,11 @@ header {
       transform: rotate(-45deg); }
 
 section {
-  width: 1024px;
   margin: auto; }
 
 footer {
   background-color: #64296d;
   width: 100vw;
-  position: fixed;
   bottom: 0;
   padding: 30px;
   -webkit-align-items: center;
@@ -340,11 +350,54 @@ footer {
     margin-bottom: 0;
     -webkit-justify-content: space-around;
     justify-content: space-around;
-    max-width: 200px;
+    max-width: 300px;
     margin: 0 auto; }
     footer .social-icons li {
       margin: 0 1rem; }
 
-/***** BOOTSTRAP NAV *****/
+.navbar {
+  margin: 0; }
+
+.main {
+  margin-top: 60px; }
+
+.clearfix {
+  clear: both; }
+
+.pasos {
+  margin-bottom: 2rem; }
+
+.retos {
+  width: 100vw; }
+  .retos .reto {
+    position: relative;
+    background-image: url(https://unsplash.it/600/900/?random);
+    background-size: cover;
+    padding-top: 3rem; }
+    .retos .reto h4 {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 1rem; }
+    .retos .reto .cta {
+      margin: auto;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 2rem; }
+    .retos .reto .bar {
+      position: relative;
+      z-index: 1;
+      padding: 1rem; }
+      .retos .reto .bar li {
+        float: left;
+        margin-left: 1rem; }
+
+.velo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(37, 37, 35, 0.4);
+  z-index: 0;
+  top: 0; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,6 @@
-div{
-    margin-bottom:1rem;
-}
 .big-margin{margin:3rem 0 2rem;}
 .small-margin{margin:1rem 0;}
+.move-left{margin-left:1rem;}
 hr{
     background-color:$blue-light;
     height: 1px;
@@ -11,14 +9,13 @@ hr{
 .mid-width{width:600px;}
 .cta{
     font-size:1rem;
-    padding:1rem 2rem;
+    padding:0.5rem 1rem;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     text-align:center;
     cursor:pointer;
-    max-width:300px;
-    min-width:100px;
+    max-width:200px;
     width:auto;
 }
 .cta.main{
@@ -27,8 +24,7 @@ hr{
     border:3px solid $purple;;
 }
 .cta.main:hover{
-    background-color:$white;
-    color:$purple;;
+    background-color:transparent;
 }
 .cta.main:active{
     background-color:$grey-light;
@@ -38,11 +34,10 @@ hr{
     background-color:$blue-light;
     color:$white;
     &:hover{
-        background-color:$white;
-        color:$blue-light;
+        background-color:transparent;
     }
     &:active{
-        background-color:$grey-light;
+        background-color:rgba($grey-light,$alpha_2);
     }
 }
 

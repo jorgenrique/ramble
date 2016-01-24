@@ -8,10 +8,14 @@ $red:#d0021b;
 $pink:#a378a6;
 $white:#fff;
 
+$alpha:0.7;
+$alpha_2:0.4;
+
 .black{color:$black;}
 .black-bg{background-color:$black}
 .purple{color:$purple;}
 .purple-bg{background-color:$purple;}
+.purple-bg-op{background-color:rgba($purple, $alpha_2);}
 .blue-dark{color:$blue-dark;}
 .blue-dark-bg{background-color:$blue-dark;}
 .blue-light{color:$blue-light;}
@@ -20,5 +24,7 @@ $white:#fff;
 .red-bg{background-color:$red;}
 .grey{color:$grey;}
 .grey-bg{background-color:$grey;}
+.grey-light{color:$grey-light;}
+.grey-light-bg{background-color:$grey-light;}
 .pink{color:$pink;}
 .pink-bg{background-color:$pink;}
