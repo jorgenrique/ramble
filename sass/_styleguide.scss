@@ -10,9 +10,9 @@
         }
     }
 }
-
 .big-margin{margin:3rem 0 2rem;}
 .small-margin{margin:1rem 0;}
+.space-bottom{margin-bottom:3rem !important;}
 .move-left{margin-left:1rem;}
 hr{
     background-color:$blue-light;
@@ -28,30 +28,35 @@ hr{
     -webkit-box-sizing: border-box;
     text-align:center;
     cursor:pointer;
-    max-width:200px;
     width:auto;
-}
-.cta.main{
-    background-color:$purple;;
-    color:$white;;
-    border:3px solid $purple;;
-}
-.cta.main:hover{
-    background-color:transparent;
-}
-.cta.main:active{
-    background-color:$grey-light;
-}
-.cta.secondary{
-    border:3px solid $blue-light;
-    background-color:$blue-light;
-    color:$white;
-    &:hover{
-        background-color:transparent;
+    margin:auto;
+    &.main{
+        background-color:$purple;
+        color:$white;
+        border:3px solid $purple;
+        &:hover{
+            background-color:transparent;
+            color:$purple;
+        }
+        &:active{
+            background-color:$grey-light;
+        }
     }
-    &:active{
-        background-color:rgba($grey-light,$alpha_2);
+    &.secondary{
+        border:3px solid $blue-light;
+        background-color:$blue-light;
+        color:$white;
+        &:hover{
+            background-color:transparent;
+            color:$blue-light;
+        }
+        &:active{
+            background-color:rgba($grey-light,$alpha_2);
+        }
     }
+    &.full{width:100%;}
+    &.big{width:70%;}
+    &.small{width:40%;}
 }
 
 form label{
@@ -84,7 +89,7 @@ input[type="radio"] + label span {
 input[type="radio"]:checked + label span {
     background:url(../img/icon-sprite.png) left top no-repeat;
 }
-input,textarea,label,select{
+input,textarea,select{
     font-size:1rem;
     margin:1em 0;
 }
@@ -96,6 +101,8 @@ input[type='text'],textarea{
     border: 3px solid $purple;
     background:$white;
     color:$purple;
+    width:80%;
+    max-width:320px;
 }
 .error{
     border:3px solid $red !important;

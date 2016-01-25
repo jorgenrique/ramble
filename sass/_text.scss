@@ -20,49 +20,43 @@ a{
     font-family: 'Roboto', sans-serif;
     font-weight:500;
 }
+
 h1,
 .t-h1{
-    font-family: 'Oswald', sans-serif;
-    font-size:4rem;
-    margin-bottom:1rem;
-}
-.mobile h1{
-    font-size:3.5rem;
-}
-h2,
-.t-h2{
     font-family: 'Oswald', sans-serif;
     font-size:3rem;
     margin-bottom:1rem;
 }
+.mobile h1{
+    font-size:2rem;
+}
+h2,
+.t-h2{
+    font-family: 'Oswald', sans-serif;
+    font-size:2rem;
+    margin-bottom:1rem;
+}
 .mobile h2{
-    font-size:2.5rem;
+    font-size:1.5rem;
 }
 h3,
 .t-h3{
     font-family: 'Roboto', sans-serif;
     font-weight:300;
-    font-size:2rem;
+    font-size:1.5rem;
     margin-bottom:1rem;
 }
 .mobile h3{
-    font-size:1.5rem;
-    font-weight:500;
+    font-size:1.25rem;
 }
-h4,
-.t-h4{
-    font-family: 'Roboto', sans-serif;
-    font-weight:300;
-    font-size:1.5rem;
-    margin-bottom:1rem;
-}
-.mobile h4{
-    font-size:1.5rem;
-}
-p{
+p,label{
     max-width:600px;
     font-family: 'Roboto', sans-serif;
     font-weight:300;
     font-size:1rem;
     margin-bottom:1rem;
+}
+label{
+    margin-top:1rem;
+    margin-bottom:0;
 }

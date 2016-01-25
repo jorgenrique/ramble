@@ -15,7 +15,7 @@
 	<script src="js/selectordie.js"></script>
     <script src="js/main.js"></script>
 </head>
-<body>
+<body class='mobile'>
 	<header class="col-xs-12">
         <nav class="col-xs-12 navbar navbar-inverse navbar-fixed-top background-purple">
             <div class="navbar-header">
@@ -37,7 +37,38 @@
             </div>
         </nav>
     </header>
-	<section id='' class='container main_cont'></section>
+	<section id='ruta-crear' class='container main_cont'>
+			<h1 class="clearfix purple">Crea tu reto</h1>
+			<p class="clearfix space-bottom">Sigue los pasos para compartir tu reto</p>
+			<div class='paso' id='paso-1'>
+				<h2 class="clearfix purple"><span>1</span> Datos generales</h2>
+				<form>
+					<label class='clearfix'>Ponle un nombre a tu reto</label>
+					<input type='text' placeholder='ej: Restaurante hermoso'>
+					<div class="clearfix container-override image">
+						<img src="https://unsplash.it/600/300/?random" alt="reto">
+					</div>
+					<div class='cta main small'>Subir foto</div>
+					<label class='clearfix'>Descríbelo brevemente</label>
+					<textarea placeholder='ej: Restaurante hermoso'		 class='space-bottom'></textarea>
+					<div class='cta secondary space-bottom full'>Siguiente paso</div>
+				</form>
+			</div>
+			<div class='paso' id='paso-2'>
+				<h2 class="clearfix purple"><span>1</span> Datos generales</h2>
+				<form>
+					<label class='clearfix'>Ponle un nombre a tu reto</label>
+					<input type='text' placeholder='ej: Restaurante hermoso'>
+					<div class="clearfix container-override image">
+						<img src="https://unsplash.it/600/300/?random" alt="reto">
+					</div>
+					<div class='cta main small'>Subir foto</div>
+					<label class='clearfix'>Descríbelo brevemente</label>
+					<textarea placeholder='ej: Restaurante hermoso'		 class='space-bottom'></textarea>
+					<div class='cta secondary space-bottom full'>Siguiente paso</div>
+				</form>
+			</div>
+	</section>
 	<footer>
 		<ul class='secondary-menu flex'>
 			<li><a href='#'>FAQ</a></li>
