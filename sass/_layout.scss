@@ -1,3 +1,12 @@
+@mixin space-around{
+    -webkit-justify-content:space-around;
+    justify-content:space-around;
+}
+@mixin space-between{
+    -webkit-justify-content:space-between;
+    justify-content:space-between;
+}
+
 html{
     font-size:16px;
 }
@@ -107,19 +116,18 @@ footer{
     padding:30px;
     -webkit-align-items: center;
     align-items: center;
+    border-top:2px solid $blue-light;
     a{
         color:$blue-light;
     }
     .secondary-menu{
-        -webkit-justify-content:space-between;
-        justify-content:space-between;
+        @include space-between;
         max-width:320px;
         margin:0 auto 30px;
     }
     .social-icons{
         margin-bottom:0;
-        -webkit-justify-content:space-around;
-        justify-content:space-around;
+        @include space-around;
         max-width:300px;
         margin:0 auto;
         li{
@@ -146,4 +154,37 @@ footer{
         margin-top:1rem;
         margin-bottom:1rem;
     }
+}
+.categoria{
+     @include space-around;
+    .cat-item{
+        cursor:pointer;
+        &.selected{
+            color:$blue-light;
+            border-bottom:2px solid $purple;
+        }
+    }
+}
+.pasos{
+    @include space-around;
+    .pasos-sel{
+        background-color: $blue-light;
+        color:$white;
+        border-radius: 25px;
+        cursor: pointer;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        width: 50px;
+        &.active{
+            color:$blue-light;
+            background-color:$purple;
+        }
+    }
+}
+.paso{
+    display:none;
+}
+#paso-1{
+    display:block;
 }

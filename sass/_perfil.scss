@@ -1,0 +1,24 @@
+.perfil{
+    .image{
+        width:30%;
+        height:30%;
+        max-width:200px;
+        float:left;
+    }
+    .name{
+        width:65%;
+        margin:0 0 1rem 5%;
+        float:left;
+    }
+    .interes{
+        float:left;
+        padding:5px 10px;
+        border: 1px solid $purple;
+        margin:0 1rem 1rem 0;
+        cursor:pointer;
+        &:after{
+            content:'X';
+            margin-left:10px;
+        }
+    }
+}

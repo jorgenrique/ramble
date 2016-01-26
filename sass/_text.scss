@@ -3,6 +3,7 @@ a{
     text-decoration:none;
     &:hover{
         color:$pink;
+        text-decoration:none;
     }
 }
 .oswald{
@@ -19,6 +20,11 @@ a{
 .roboto-thick{
     font-family: 'Roboto', sans-serif;
     font-weight:500;
+}
+h1,
+h2,
+h3{
+    text-transform:uppercase;
 }
 
 h1,

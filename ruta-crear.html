@@ -38,35 +38,88 @@
         </nav>
     </header>
 	<section id='ruta-crear' class='container main_cont'>
-			<h1 class="clearfix purple">Crea tu reto</h1>
+			<h1 class="clearfix purple space-top">Crea tu reto</h1>
 			<p class="clearfix space-bottom">Sigue los pasos para compartir tu reto</p>
+			<div class='flex pasos space-bottom'>
+				<div id='paso-1-sel' class='active pasos-sel'>1</div>
+				<div id='paso-2-sel' class='pasos-sel'>2</div>
+				<div id='paso-3-sel' class='pasos-sel'>3</div>
+				<div id='paso-4-sel' class='pasos-sel'>4</div>
+			</div>
 			<div class='paso' id='paso-1'>
-				<h2 class="clearfix purple"><span>1</span> Datos generales</h2>
+				<h2 class="clearfix purple">Datos generales</h2>
 				<form>
 					<label class='clearfix'>Ponle un nombre a tu reto</label>
 					<input type='text' placeholder='ej: Restaurante hermoso'>
 					<div class="clearfix container-override image">
 						<img src="https://unsplash.it/600/300/?random" alt="reto">
 					</div>
-					<div class='cta main small'>Subir foto</div>
+					<div class='cta main big'>Subir foto</div>
 					<label class='clearfix'>Descríbelo brevemente</label>
-					<textarea placeholder='ej: Restaurante hermoso'		 class='space-bottom'></textarea>
-					<div class='cta secondary space-bottom full'>Siguiente paso</div>
+					<textarea placeholder='ej: Restaurante hermoso' class='space-bottom'></textarea>
+					<div class='cta secondary space-bottom full'>Continua</div>
 				</form>
 			</div>
 			<div class='paso' id='paso-2'>
-				<h2 class="clearfix purple"><span>1</span> Datos generales</h2>
+				<h2 class="clearfix purple">Origen y destino</h2>
 				<form>
-					<label class='clearfix'>Ponle un nombre a tu reto</label>
+					<label class='clearfix'>Dirección</label>
 					<input type='text' placeholder='ej: Restaurante hermoso'>
 					<div class="clearfix container-override image">
 						<img src="https://unsplash.it/600/300/?random" alt="reto">
 					</div>
-					<div class='cta main small'>Subir foto</div>
-					<label class='clearfix'>Descríbelo brevemente</label>
-					<textarea placeholder='ej: Restaurante hermoso'		 class='space-bottom'></textarea>
-					<div class='cta secondary space-bottom full'>Siguiente paso</div>
+					<div class='cta main big'>Guardar Posición</div>
+					<label class='clearfix'>Nombre del destino</label>
+					<input type='text' placeholder='ej: Restaurante hermoso' class='space-bottom'>
+					<div class='cta secondary space-bottom full'>Continua</div>
 				</form>
+			</div>
+			<div class='paso' id='paso-3'>
+				<h2 class="clearfix purple">Hagamos la ruta</h2>
+				<form>
+					<label class='clearfix space-bottom'>Definir mejor diseno</label>
+					<div class='cta secondary space-bottom full clearfix'>Continua</div>
+				</form>
+			</div>
+			<div class='paso' id='paso-4'>
+				<h2 class="clearfix purple">Características</h2>
+				<h3 class="clearfix purple">Tipo de plan</h3>
+				<div class='flex categoria tipo-plan'>
+					<div class='cat-item'>X</div>
+					<div class='cat-item'>X</div>
+					<div class='cat-item'>X</div>
+					<div class='cat-item'>X</div>
+					<div class='cat-item'>X</div>
+					<div class='cat-item'>X</div>
+				</div>
+				<hr>
+				<h3 class="clearfix purple">Cuando?</h3>
+				<p>Resover mejor</p>
+				<hr>
+				<h3 class="clearfix purple">Quienes?</h3>
+				<div class='flex categoria tipo-plan'>
+					<div class='cat-item'>X</div>
+					<div class='cat-item'>X</div>
+					<div class='cat-item'>X</div>
+					<div class='cat-item'>X</div>
+				</div>
+				<hr>
+				<h3 class="clearfix purple">Tiempo</h3>
+				<div class='flex categoria tipo-plan'>
+					<div class='cat-item'>X</div>
+					<div class='cat-item'>X</div>
+					<div class='cat-item'>X</div>
+					<div class='cat-item'>X</div>
+				</div>
+				<hr>
+				<h3 class="clearfix purple">Precio</h3>
+				<div class='flex categoria tipo-plan space-bottom'>
+					<div class='cat-item'>X</div>
+					<div class='cat-item'>X</div>
+					<div class='cat-item'>X</div>
+					<div class='cat-item'>X</div>
+				</div>
+				<div class='cta secondary space-bottom full clearfix'>Guardar</div>
 			</div>
 	</section>
 	<footer>
