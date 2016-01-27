@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>RAMBLE</title>
-
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/selectordie.css" />
@@ -16,34 +15,43 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-	<header class="col-xs-12">
-        <nav class="col-xs-12 navbar navbar-inverse navbar-fixed-top background-purple">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <h1 class="navbar-brand" href="#"><img src='img/logo.png'></h1>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav text-right">
-                    <li>Ofertas</li>
-                    <li>Nuestras favoritas</li>
-                    <li>Catálogo</li>
-                    <li>Acerda de</li>
-                    <li>Contacto</li>
-                </ul>
-            </div>
+	<header class="col-xs-12 purple-bg clearfix">
+        <nav class="navigation">
+            <div class="element logo clearfix"><a href="home.html"><img src='img/logo.png'></a></div>
+			<div class="element clearfix">
+				<div class="navbar-header search">
+					<img id="lupa" src='img/lupa.png'>
+					<div id="search-bar" class="nav-menu search-bar">
+						<input class='clearfix' type="text" value="Barcelona">
+						<select class="select">
+							<option value="volvo">Que quieres hacer?</option>
+							<option value="saab">opt1</option>
+							<option value="mercedes">opt2</option>
+							<option value="audi">opt3</option>
+						</select>
+						<div class='clearfix call-to-action space-bottom'><a class='cta secondary small space-top' href="#">Buscar</a></div>
+					</div>
+				</div>
+				<div class="navbar-header profile closed" id='profile'>
+					<img src='img/perfil.png'>
+					<svg class="svg-triangle" xmlns="http://www.w3.org/2000/svg" width="10" height="34" version="1.1">
+						<polygon points="0,13 10,13 5,21"/>
+                    </svg>
+					<ul id="menu" class='nav-menu'>
+						<li>Login</li>
+						<li>Crear Cuenta</li>
+						<li>FAQ</li>
+						<li>Terminos y condiciones</li>
+						<li>Contacto</li>
+					</ul>
+				</div>
+			</div>
         </nav>
     </header>
-	<section id='' class='container main_cont'></section>
+	<section id='' class='container main_cont clearfix'>
+
+	</section>
 	<footer>
-		<ul class='secondary-menu flex'>
-			<li><a href='#'>FAQ</a></li>
-			<li><a href='#'>Términos y condiciones</a></li>
-			<li><a href='#'>Contacto</a></li>
-		</ul>
 		<ul class='social-icons flex'>
 			<li><a href='#'><img src='img/fb_b.png' alt='Facebook'></a></li>
 			<li><a href='#'><img src='img/twitter_b.png' alt='Twitter'></a></li>

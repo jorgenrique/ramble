@@ -1,19 +1,17 @@
 $(document).ready(function () {
-	$(".navbar-toggle").on("click", function () {
-		$(this).toggleClass("active");
+	//Titulo en el select
+	$('.select').selectOrDie({
+		placeholder:"¿Qué quieres hacer?"
 	});
-	$('.select').selectOrDie();
+	//Categories select
 	$('.cat-item').click(function(){
 		$(this).addClass('selected');
 	});
+	//Perfil eliminar intereses
 	$('.interes').click(function(){
 		$(this).remove();
 	})
-	//$('.pasos-sel').click(function(){
-	//	$('.pasos-sel').removeClass('active');
-	//	$(this).addClass('active');
-	//})
-
+	//Pasos hide/show function
 	$('#paso-1-sel').click(function(){
 		$('.paso').hide();
 		$('#paso-1').show();
@@ -44,4 +42,18 @@ $(document).ready(function () {
 		$('#paso-3-sel').addClass('active');
 		$('#paso-4-sel').addClass('active');
 	})
+	//Menu Bar hide/show function
+	$('#profile').on("click", function () {
+		$('#menu').toggleClass("show");
+  	});
+	$('section, footer').on("click", function () {
+		$('#menu').removeClass("show");
+  	});
+	//Search Bar hide/show function
+	$('#lupa').on("click", function () {
+		$('#search-bar').show();
+  	});
+	$('section, footer').on("click", function () {
+		$('#search-bar').hide();
+  	});
 });

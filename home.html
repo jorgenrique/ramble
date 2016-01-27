@@ -16,25 +16,18 @@
     <script src="js/main.js"></script>
 </head>
 <body class='mobile'>
-	<header class="col-xs-12">
-        <nav class="col-xs-12 navbar navbar-inverse navbar-fixed-top background-purple">
+	<header class="col-xs-12 background-purple">
+        <nav class="navigation">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
                 <h1 class="navbar-brand" href="#"><img src='img/logo.png'></h1>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav text-right">
-                    <li>Ofertas</li>
-                    <li>Nuestras favoritas</li>
-                    <li>Catálogo</li>
-                    <li>Acerda de</li>
-                    <li>Contacto</li>
-                </ul>
-            </div>
+			<ul class="nav navbar-nav text-right">
+				<li>Ofertas</li>
+				<li>Nuestras favoritas</li>
+				<li>Catálogo</li>
+				<li>Acerda de</li>
+				<li>Contacto</li>
+			</ul>
         </nav>
     </header>
 	<section id='home' class='main_cont'>
@@ -43,9 +36,14 @@
 			<h1 class="grey-light clearfix">Get lost and find great places</h1>
 			<p class="grey-light clearfix">Lorem ipsum dolor si amet, consectetur
 adipcising elit.</p>
-			<p class="grey-light clearfix">Estas en <span class='purple'>Barcelona</span></p>
-			<input class='clearfix' type="text" placeholder="¿Qué quieres hacer?">
-			<div class='clearfix call-to-action'><a class='cta main small space-top' href="#">Buscar</a></div>
+			<input class='clearfix' type="text" value="Barcelona">
+			<select class="select">
+				<option value="volvo">Que quieres hacer?</option>
+				<option value="saab">opt1</option>
+				<option value="mercedes">opt2</option>
+				<option value="audi">opt3</option>
+			</select>
+			<div class='clearfix call-to-action space-bottom'><a class='cta main small space-top' href="#">Buscar</a></div>
 		</div>
 		<div class="col-xs-12 pasos container clearfix">
 			<div class='clearfix'>

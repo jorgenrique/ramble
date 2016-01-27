@@ -4,10 +4,13 @@
 .home-intro{
     width:100vw;
     position:relative;
-    background-image:url(https://unsplash.it/600/900/?random);
+    background-image:url(../img/home.jpg);
     background-size: cover;
     padding:3rem 0 2rem;
     margin-bottom:2rem;
+    .velo{
+        background-color:rgba($black, $alpha_3);
+    }
     h1,h2,h3,p{
         text-align:center;
         position:relative;
@@ -15,6 +18,7 @@
         width:80%;
         margin:auto;
         margin-bottom:1rem;
+        text-shadow:0px 2px 2px #000;
         span{
             text-decoration:underline;
             cursor:pointer;
@@ -24,13 +28,45 @@
         text-transform:uppercase;
     }
     input{
-        margin-left:10%;
+        margin-left:15%;
         background-color:transparent;
         color:#fff;
         position:relative;
         z-index:1;
-        width:80%;
-        margin-bottom:1rem;
+        width:70%;
+        max-width:70%;
+        margin-bottom:2rem;
+        border:none;
+        border-bottom:2px solid $white;
+        font-size:24px;
+        padding:0.3rem 0;
+        opacity:1;
+        background:url(../img/pin.png) no-repeat right center;
+    }
+    .sod_select{
+        width:70vw;
+        margin-left:15%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        background-color:transparent;
+        border-color:$white;
+        color:$white;
+        z-index:2;
+        margin-bottom:2rem;
+        &:before{
+            content:"";
+        }
+        &:after{
+            bottom:calc(50% - 7px);
+            font-size:14px;
+        }
+        .sod_list_wrapper{
+            width:70vw;
+            border-color:$white;
+            background-color:$white;
+            color:$black
+        }
     }
     .call-to-action{
         a{
@@ -63,7 +99,7 @@
         .bar{
             position:relative;
             z-index:1;
-            padding:1rem;
+            padding:1rem 2rem;
             li{
                 float:left;
                 margin-left:1rem;

@@ -1,19 +1,32 @@
 @mixin space-around{
+    display:-webkit-flex;
+    display:flex;
     -webkit-justify-content:space-around;
     justify-content:space-around;
 }
 @mixin space-between{
+    display:-webkit-flex;
+    display:flex;
     -webkit-justify-content:space-between;
     justify-content:space-between;
 }
-
-html{
-    font-size:16px;
+@mixin shadow{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.2s ease-in-out;
+}
+html {
+  box-sizing: border-box;
+  font-size:16px;
+  height:100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 body{
     font-family:'Roboto',sans-serif;
     font-weight:300;
     font-size:16px;
+    height:100%;
 }
 .left{
     float:left;
@@ -25,51 +38,117 @@ body{
     text-align:center;
 }
 img{
-    width:100%;
+    max-width:100%;
+    vertical-align:inherit;
 }
 ul{
 	list-style-type:none;
 }
+section{
+    min-height:200px;
+}
 header{
-	overflow:hidden;
 	padding:1rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1;
     nav{
-        ul.nav{
-            margin:2rem 0;
-        }
-        ul.nav li{
-        	line-height:50px;
-            text-align:center;
-            width:100%;
-            color:$blue-light;
-        }
-    }
-    .navbar-inverse{
-        background-color:$purple;
-        color:$blue-light;
-        .navbar-toggle{
-            border:none;
-            &:hover{
-                background:none;
+        @include space-between;
+        .element{
+            height:35px;
+            display:inline-block;
+            .navbar-header,img{height:100%;}
+            .navbar-header{
+                float:left;
+                svg{
+                    polygon{
+                        fill:$white;
+                    }
+                }
+                svg.active{
+                    transform:rotate(180deg);
+                }
+                .nav-menu{
+                    @include shadow;
+                    display:none;
+                    color:$white;
+                    position:absolute;
+                    top:67px;
+                    z-index:2;
+                    right:0;
+                    background-color:$purple;
+                    padding:1rem 0;
+                    border-top:1px solid $blue-light;
+                    li{
+                        padding:1rem 2rem;
+                        text-align:right;
+                        font-weight:300;
+                    }
+                }
+                &.search{
+                    padding-right:2rem;
+                    img{
+                        height:25px;
+                        margin-top:5px;
+                    }
+                }
+                .search-bar{
+                    width:100vw;
+                    background-color:rgba($black,$alpha);
+                    input{
+                        margin-left:15%;
+                        background-color:transparent;
+                        color:#fff;
+                        position:relative;
+                        z-index:1;
+                        width:70%;
+                        max-width:70%;
+                        margin-bottom:2rem;
+                        border:none;
+                        border-bottom:2px solid $white;
+                        font-size:24px;
+                        padding:0.3rem 0;
+                        opacity:1;
+                        background:url(../img/pin.png) no-repeat right center;
+                    }
+                    .sod_select{
+                        width:70vw;
+                        margin-left:15%;
+                        box-sizing: border-box;
+                        -moz-box-sizing: border-box;
+                        -webkit-box-sizing: border-box;
+                        background-color:transparent;
+                        border-color:$white;
+                        color:$white;
+                        z-index:2;
+                        margin-bottom:2rem;
+                        &:before{
+                            content:"";
+                        }
+                        &:after{
+                            bottom:calc(50% - 7px);
+                            font-size:14px;
+                        }
+                        .sod_list_wrapper{
+                            width:70vw;
+                            border-color:$white;
+                            background-color:$white;
+                            color:$black
+                        }
+                    }
+                    .call-to-action{
+                        a{
+                            float:left;
+                            position:relative;
+                            z-index:1;
+                            margin-left:30%;
+                        }
+                    }
+                }
             }
-            .icon-bar{
-                background-color:$blue-light;
-            }
         }
-        .navbar-collapse,
-        .navbar-form{
-            border-color:$white;
-        }
-    }
-    .navbar-brand{
-        height:60px;
-        img{
-            height:100%;
-            width:auto;
-        }
-    }
-    .navbar-header{
-        margin:0;
     }
     h1{
     	margin:0;
@@ -77,32 +156,6 @@ header{
     }
     h3{
         color:$blue-light;
-    }
-    .navbar-toggle{
-        margin:13px 0;
-        .icon-bar:nth-of-type(2) {
-        	  top: 1px;
-        }
-        .icon-bar:nth-of-type(3) {
-          	top: 2px;
-        }
-        .icon-bar {
-        	  position: relative;
-        	  transition: all 500ms ease-in-out;
-        }
-        &.active{
-            .icon-bar:nth-of-type(1) {
-            	  top: 6px;
-            	  transform: rotate(45deg);
-            }
-            .icon-bar:nth-of-type(2) {
-            	  background-color: transparent;
-            }
-            .icon-bar:nth-of-type(3) {
-            	  top: -6px;
-            	  transform: rotate(-45deg);
-            }
-        }
     }
 }
 section{
@@ -169,6 +222,7 @@ footer{
     @include space-around;
     .pasos-sel{
         background-color: $blue-light;
+        display:none;
         color:$white;
         border-radius: 25px;
         cursor: pointer;
@@ -186,5 +240,8 @@ footer{
     display:none;
 }
 #paso-1{
+    display:block;
+}
+.show{
     display:block;
 }
