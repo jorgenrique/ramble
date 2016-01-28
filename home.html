@@ -16,36 +16,31 @@
     <script src="js/main.js"></script>
 </head>
 <body class='mobile'>
-	<header class="col-xs-12 background-purple">
-        <nav class="navigation">
-            <div class="navbar-header">
-                <h1 class="navbar-brand" href="#"><img src='img/logo.png'></h1>
-            </div>
-			<ul class="nav navbar-nav text-right">
-				<li>Ofertas</li>
-				<li>Nuestras favoritas</li>
-				<li>Catálogo</li>
-				<li>Acerda de</li>
-				<li>Contacto</li>
-			</ul>
-        </nav>
+	<header class="col-xs-12 background-purple" id='header_home'>
+		<img src='img/logo.png'>
+		<div class="account">
+			<a href='#'>Entrá</a>
+			<a href='#'>Registrate</a>
+		</div>
     </header>
-	<section id='home' class='main_cont'>
+	<section id='home'>
 		<div class='home-intro'>
-			<div class='velo'></div>
-			<h1 class="grey-light clearfix">Get lost and find great places</h1>
-			<p class="grey-light clearfix">Lorem ipsum dolor si amet, consectetur
-adipcising elit.</p>
+			<h1 class="white clearfix">Get lost and find great places</h1>
+			<p class="white clearfix">Lorem ipsum dolor si amet, consectetur adipcising elit.</p>
 			<input class='clearfix' type="text" value="Barcelona">
 			<select class="select">
-				<option value="volvo">Que quieres hacer?</option>
-				<option value="saab">opt1</option>
-				<option value="mercedes">opt2</option>
-				<option value="audi">opt3</option>
+				<option value="volvo">Comida</option>
+				<option value="saab">Copas</option>
+				<option value="mercedes">Café</option>
+				<option value="audi">Música en vivo</option>
+				<option value="audi">Fiesta</option>
+				<option value="audi">Naturaleza</option>
+				<option value="audi">Historia &amp; Arte</option>
+				<option value="audi">Random</option>
 			</select>
-			<div class='clearfix call-to-action space-bottom'><a class='cta main small space-top' href="#">Buscar</a></div>
+			<div class='clearfix call-to-action space-bottom'><a class='cta secondary small space-top' href="retos.html">Buscar</a></div>
 		</div>
-		<div class="col-xs-12 pasos container clearfix">
+		<div class="pasos-home container clearfix">
 			<div class='clearfix'>
 				<div class="icon col-xs-3"><img src="https://unsplash.it/75/75/?random"></div>
 				<p class='col-xs-9'>Registrarte, necesitamos que te identifiques para saber quien ha superado los retos.</p>
@@ -63,7 +58,7 @@ adipcising elit.</p>
 				<div class="icon col-xs-3"><img src="https://unsplash.it/75/75/?random"></div>
 			</div>
 		</div>
-		<h1 class='clearfix container move-left'>Retos sugeridos</h1>
+		<h1 class='clearfix container move-left purple'>Retos sugeridos</h1>
 		<div class='retos'>
 			<div class='reto grey-light clearfix'>
 				<div class='velo'></div>
@@ -107,11 +102,6 @@ adipcising elit.</p>
 		</div>
 	</section>
 	<footer>
-		<ul class='secondary-menu flex'>
-			<li><a href='#'>FAQ</a></li>
-			<li><a href='#'>Términos y condiciones</a></li>
-			<li><a href='#'>Contacto</a></li>
-		</ul>
 		<ul class='social-icons flex'>
 			<li><a href='#'><img src='img/fb_b.png' alt='Facebook'></a></li>
 			<li><a href='#'><img src='img/twitter_b.png' alt='Twitter'></a></li>

@@ -16,32 +16,48 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-	<header class="col-xs-12">
-        <nav class="col-xs-12 navbar navbar-inverse navbar-fixed-top background-purple">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <h1 class="navbar-brand" href="#"><img src='img/logo.png'></h1>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav text-right">
-                    <li>Ofertas</li>
-                    <li>Nuestras favoritas</li>
-                    <li>Catálogo</li>
-                    <li>Acerda de</li>
-                    <li>Contacto</li>
-                </ul>
-            </div>
+	<header class="col-xs-12 purple-bg clearfix" id='header_inner'>
+        <nav class="navigation">
+            <div class="element logo clearfix"><a href="home.html"><img src='img/logo.png'></a></div>
+			<div class="element clearfix">
+				<div class="navbar-header search">
+					<img id="lupa" src='img/lupa.png'>
+					<div id="search-bar" class="nav-menu search-bar">
+						<input class='clearfix' type="text" value="Barcelona">
+						<select class="select">
+							<option value="volvo">Comida</option>
+							<option value="saab">Copas</option>
+							<option value="mercedes">Café</option>
+							<option value="audi">Música en vivo</option>
+							<option value="audi">Fiesta</option>
+							<option value="audi">Naturaleza</option>
+							<option value="audi">Historia &amp; Arte</option>
+							<option value="audi">Random</option>
+						</select>
+						<div class='clearfix call-to-action space-bottom'><a class='cta main small space-top' href="retos.html">Buscar</a></div>
+					</div>
+				</div>
+				<div class="navbar-header profile closed" id='profile'>
+					<img src='img/perfil.png'>
+					<svg class="svg-triangle" xmlns="http://www.w3.org/2000/svg" width="10" height="34" version="1.1">
+						<polygon points="0,13 10,13 5,21"/>
+                    </svg>
+					<ul id="menu" class='nav-menu'>
+						<li>Login</li>
+						<li>Crear Cuenta</li>
+						<li>FAQ</li>
+						<li>Terminos y condiciones</li>
+						<li>Contacto</li>
+					</ul>
+				</div>
+			</div>
         </nav>
     </header>
 	<section id='retos' class='main_cont'>
 		<h2 class='clearfix container move-left purple space-top'>Retos</h2>
 		<p class='clearfix container move-left'>Barcelona, copas</p>
 		<div class='retos'>
-			<div class='reto grey-light clearfix'>
+			<div class='reto white clearfix'>
 				<div class='velo'></div>
 				<h3>Nombre del reto</h3>
 				<div class="cta secondary small">Jugar</div>
@@ -54,7 +70,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class='reto grey-light clearfix'>
+			<div class='reto white clearfix'>
 				<div class='velo'></div>
 				<h3>Nombre del reto</h3>
 				<div class="cta secondary small">Jugar</div>
@@ -67,7 +83,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class='reto grey-light clearfix'>
+			<div class='reto white clearfix'>
 				<div class='velo'></div>
 				<h3>Nombre del reto</h3>
 				<div class="cta secondary small">Jugar</div>

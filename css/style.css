@@ -48,7 +48,7 @@
 .grey-light-bg {
   background-color: #eee; }
 
-.white-light {
+.white {
   color: #fff; }
 
 .white-bg {
@@ -117,7 +117,8 @@ hr {
     color: #fff; }
     .cta.secondary:hover {
       background-color: transparent;
-      color: #2ab6c4; }
+      color: #2ab6c4;
+      background-color: rgba(238, 238, 238, 0.4); }
     .cta.secondary:active {
       background-color: rgba(238, 238, 238, 0.4); }
   .cta.full {
@@ -138,10 +139,11 @@ input[type="checkbox"] + label span {
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin: 0 4px 0 1rem;
+  margin: 0 0.5rem 0 0.5rem;
   vertical-align: middle;
   background: url(../img/icon-sprite.png) -40px top no-repeat;
-  cursor: pointer; }
+  cursor: pointer;
+  float: left; }
 
 input[type="checkbox"]:checked + label span {
   background: url(../img/icon-sprite.png) -60px top no-repeat; }
@@ -164,7 +166,7 @@ input, textarea, select {
 input[type='submit'] {
   padding: .5rem 2rem; }
 
-input[type='text'], textarea {
+input[type='text'], input[type='email'], input[type='password'], textarea {
   padding: 1rem .6rem;
   border: 3px solid #64296d;
   background: #fff;
@@ -209,6 +211,45 @@ textarea {
   width: 100px;
   height: 100px;
   border-radius: 50px; }
+
+.home-intro .sod_select,
+.navbar-header .sod_select {
+  width: 70vw;
+  margin-left: 15%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+  z-index: 2;
+  margin-bottom: 2rem; }
+  .home-intro .sod_select:before,
+  .navbar-header .sod_select:before {
+    content: ""; }
+  .home-intro .sod_select:after,
+  .navbar-header .sod_select:after {
+    bottom: calc(50% - 7px);
+    font-size: 14px; }
+  .home-intro .sod_select .sod_list_wrapper,
+  .navbar-header .sod_select .sod_list_wrapper {
+    width: 70vw;
+    border-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #64296d; }
+    .home-intro .sod_select .sod_list_wrapper .active,
+    .navbar-header .sod_select .sod_list_wrapper .active {
+      color: #2ab6c4; }
+.home-intro .call-to-action a,
+.navbar-header .call-to-action a {
+  float: left;
+  position: relative;
+  z-index: 1;
+  margin-left: 30%; }
+  .home-intro .call-to-action a:hover,
+  .navbar-header .call-to-action a:hover {
+    color: #fff;
+    border-color: #fff; }
 
 a {
   color: #64296d;
@@ -309,30 +350,28 @@ ul {
 section {
   min-height: 200px; }
 
-header {
+#header_inner {
   padding: 1rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1; }
-  header nav {
+  z-index: 3; }
+  #header_inner nav {
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: space-between;
     justify-content: space-between; }
-    header nav .element {
+    #header_inner nav .element {
       height: 35px;
       display: inline-block; }
-      header nav .element .navbar-header, header nav .element img {
+      #header_inner nav .element .navbar-header, #header_inner nav .element img {
         height: 100%; }
-      header nav .element .navbar-header {
+      #header_inner nav .element .navbar-header {
         float: left; }
-        header nav .element .navbar-header svg polygon {
+        #header_inner nav .element .navbar-header svg polygon {
           fill: #fff; }
-        header nav .element .navbar-header svg.active {
-          transform: rotate(180deg); }
-        header nav .element .navbar-header .nav-menu {
+        #header_inner nav .element .navbar-header .nav-menu {
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
           transition: all 0.2s ease-in-out;
           display: none;
@@ -341,22 +380,22 @@ header {
           top: 67px;
           z-index: 2;
           right: 0;
-          background-color: #64296d;
+          background-color: rgba(100, 41, 109, 0.8);
           padding: 1rem 0;
           border-top: 1px solid #2ab6c4; }
-          header nav .element .navbar-header .nav-menu li {
+          #header_inner nav .element .navbar-header .nav-menu li {
             padding: 1rem 2rem;
             text-align: right;
             font-weight: 300; }
-        header nav .element .navbar-header.search {
+        #header_inner nav .element .navbar-header.search {
           padding-right: 2rem; }
-          header nav .element .navbar-header.search img {
+          #header_inner nav .element .navbar-header.search img {
             height: 25px;
             margin-top: 5px; }
-        header nav .element .navbar-header .search-bar {
+        #header_inner nav .element .navbar-header .search-bar {
           width: 100vw;
-          background-color: rgba(37, 37, 35, 0.7); }
-          header nav .element .navbar-header .search-bar input {
+          background-color: rgba(42, 182, 196, 0.8); }
+          #header_inner nav .element .navbar-header .search-bar input {
             margin-left: 15%;
             background-color: transparent;
             color: #fff;
@@ -371,7 +410,7 @@ header {
             padding: 0.3rem 0;
             opacity: 1;
             background: url(../img/pin.png) no-repeat right center; }
-          header nav .element .navbar-header .search-bar .sod_select {
+          #header_inner nav .element .navbar-header .search-bar .sod_select {
             width: 70vw;
             margin-left: 15%;
             box-sizing: border-box;
@@ -382,25 +421,27 @@ header {
             color: #fff;
             z-index: 2;
             margin-bottom: 2rem; }
-            header nav .element .navbar-header .search-bar .sod_select:before {
+            #header_inner nav .element .navbar-header .search-bar .sod_select:before {
               content: ""; }
-            header nav .element .navbar-header .search-bar .sod_select:after {
+            #header_inner nav .element .navbar-header .search-bar .sod_select:after {
               bottom: calc(50% - 7px);
               font-size: 14px; }
-            header nav .element .navbar-header .search-bar .sod_select .sod_list_wrapper {
+            #header_inner nav .element .navbar-header .search-bar .sod_select .sod_list_wrapper {
               width: 70vw;
               border-color: #fff;
-              background-color: #fff;
-              color: #252523; }
-          header nav .element .navbar-header .search-bar .call-to-action a {
+              background-color: rgba(255, 255, 255, 0.8);
+              color: #64296d; }
+              #header_inner nav .element .navbar-header .search-bar .sod_select .sod_list_wrapper .active {
+                color: #2ab6c4; }
+          #header_inner nav .element .navbar-header .search-bar .call-to-action a {
             float: left;
             position: relative;
             z-index: 1;
             margin-left: 30%; }
-  header h1 {
+  #header_inner h1 {
     margin: 0;
     content: ""; }
-  header h3 {
+  #header_inner h3 {
     color: #2ab6c4; }
 
 section {
@@ -438,7 +479,7 @@ footer {
   margin: 0; }
 
 .main_cont {
-  margin-top: 60px; }
+  margin-top: 6rem; }
 
 .clearfix {
   clear: both; }
@@ -490,18 +531,94 @@ footer {
 .show {
   display: block; }
 
-.pasos {
+.inicio, .registro {
+  cursor: pointer; }
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 10; }
+  .overlay .account-container {
+    display: none;
+    width: 80%;
+    max-width: 320px;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.2s ease-in-out;
+    text-align: center; }
+    .overlay .account-container .close-btn {
+      position: absolute;
+      color: #2ab6c4;
+      right: 0;
+      top: -40px;
+      font-size: 30px;
+      cursor: pointer; }
+    .overlay .account-container h3 {
+      padding: 1rem 2rem;
+      text-align: left;
+      margin: 0; }
+    .overlay .account-container input {
+      border: none;
+      border-bottom: 2px solid #2ab6c4;
+      margin: auto;
+      padding: 0.3rem;
+      margin-top: 2rem; }
+    .overlay .account-container label {
+      margin-top: 2rem; }
+    .overlay .account-container .cta {
+      float: left;
+      margin-top: 2rem;
+      margin-left: 15%; }
+    .overlay .account-container p {
+      padding: 2rem 1rem 3rem;
+      width: 100%; }
+      .overlay .account-container p span {
+        text-decoration: underline;
+        cursor: pointer; }
+
+#header_home {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  z-index: 3; }
+  #header_home img {
+    height: 35px;
+    margin: 1.5rem 0 0 1rem; }
+  #header_home .account {
+    margin: 2rem 1rem 0 0; }
+  #header_home a {
+    color: #fff; }
+    #header_home a:first-of-type {
+      padding-right: 1rem;
+      margin-right: 1rem;
+      border-right: 1px solid #fff; }
+    #header_home a:hover {
+      opacity: 0.8; }
+
+.pasos-home {
   margin-bottom: 2rem; }
+  .pasos-home > div {
+    margin-bottom: 2rem; }
 
 .home-intro {
   width: 100vw;
   position: relative;
   background-image: url(../img/home.jpg);
   background-size: cover;
-  padding: 3rem 0 2rem;
-  margin-bottom: 2rem; }
-  .home-intro .velo {
-    background-color: rgba(37, 37, 35, 0.1); }
+  padding: 6rem 0 2rem;
+  margin-bottom: 4rem; }
   .home-intro h1, .home-intro h2, .home-intro h3, .home-intro p {
     text-align: center;
     position: relative;
@@ -530,32 +647,6 @@ footer {
     padding: 0.3rem 0;
     opacity: 1;
     background: url(../img/pin.png) no-repeat right center; }
-  .home-intro .sod_select {
-    width: 70vw;
-    margin-left: 15%;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    background-color: transparent;
-    border-color: #fff;
-    color: #fff;
-    z-index: 2;
-    margin-bottom: 2rem; }
-    .home-intro .sod_select:before {
-      content: ""; }
-    .home-intro .sod_select:after {
-      bottom: calc(50% - 7px);
-      font-size: 14px; }
-    .home-intro .sod_select .sod_list_wrapper {
-      width: 70vw;
-      border-color: #fff;
-      background-color: #fff;
-      color: #252523; }
-  .home-intro .call-to-action a {
-    float: left;
-    position: relative;
-    z-index: 1;
-    margin-left: 30%; }
 
 .retos {
   width: 100vw; }
@@ -568,7 +659,8 @@ footer {
       text-align: center;
       position: relative;
       z-index: 1;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      text-shadow: 0px 2px 2px #000; }
     .retos .reto .cta {
       margin: auto;
       position: relative;
@@ -587,17 +679,9 @@ footer {
       right: 1rem;
       color: #2ab6c4;
       padding: 5px 10px;
-      background-color: rgba(37, 37, 35, 0.7); }
+      background-color: rgba(37, 37, 35, 0.6); }
       .retos .reto .completed.not {
         color: #d0021b; }
-
-.velo {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(37, 37, 35, 0.4);
-  z-index: 0;
-  top: 0; }
 
 .perfil .image {
   width: 30%;

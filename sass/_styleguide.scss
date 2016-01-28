@@ -50,6 +50,7 @@ hr{
         &:hover{
             background-color:transparent;
             color:$blue-light;
+            background-color:rgba($grey-light,$alpha_2);
         }
         &:active{
             background-color:rgba($grey-light,$alpha_2);
@@ -71,10 +72,11 @@ input[type="checkbox"] + label span {
     display:inline-block;
     width:20px;
     height:20px;
-    margin:0 4px 0 1rem;
+    margin:0 0.5rem 0 0.5rem;
     vertical-align:middle;
     background:url(../img/icon-sprite.png) -40px top no-repeat;
     cursor:pointer;
+    float:left
 }
 input[type="checkbox"]:checked + label span {
     background:url(../img/icon-sprite.png) -60px top no-repeat;
@@ -97,7 +99,7 @@ input,textarea,select{
 input[type='submit']{
     padding:.5rem 2rem;
 }
-input[type='text'],textarea{
+input[type='text'],input[type='email'],input[type='password'],textarea{
     padding: 1rem .6rem;
     border: 3px solid $purple;
     background:$white;
@@ -136,4 +138,47 @@ textarea{
     width:100px;
     height:100px;
     border-radius:50px;
+}
+.home-intro,
+.navbar-header{
+    .sod_select{
+        width:70vw;
+        margin-left:15%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        background-color:transparent;
+        border-color:$white;
+        color:$white;
+        z-index:2;
+        margin-bottom:2rem;
+        &:before{
+            content:"";
+        }
+        &:after{
+            bottom:calc(50% - 7px);
+            font-size:14px;
+        }
+        .sod_list_wrapper{
+            width:70vw;
+            border-color:$white;
+            background-color:rgba($white,$alpha_3);
+            color:$purple;
+            .active{
+                color:$blue-light;
+            }
+        }
+    }
+    .call-to-action{
+        a{
+            float:left;
+            position:relative;
+            z-index:1;
+            margin-left:30%;
+            &:hover{
+                color:$white;
+                border-color:$white;
+            }
+        }
+    }
 }

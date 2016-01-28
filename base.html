@@ -15,7 +15,7 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-	<header class="col-xs-12 purple-bg clearfix">
+	<header class="col-xs-12 purple-bg clearfix" id='header_inner'>
         <nav class="navigation">
             <div class="element logo clearfix"><a href="home.html"><img src='img/logo.png'></a></div>
 			<div class="element clearfix">
@@ -24,12 +24,16 @@
 					<div id="search-bar" class="nav-menu search-bar">
 						<input class='clearfix' type="text" value="Barcelona">
 						<select class="select">
-							<option value="volvo">Que quieres hacer?</option>
-							<option value="saab">opt1</option>
-							<option value="mercedes">opt2</option>
-							<option value="audi">opt3</option>
+							<option value="volvo">Comida</option>
+							<option value="saab">Copas</option>
+							<option value="mercedes">Café</option>
+							<option value="audi">Música en vivo</option>
+							<option value="audi">Fiesta</option>
+							<option value="audi">Naturaleza</option>
+							<option value="audi">Historia &amp; Arte</option>
+							<option value="audi">Random</option>
 						</select>
-						<div class='clearfix call-to-action space-bottom'><a class='cta secondary small space-top' href="#">Buscar</a></div>
+						<div class='clearfix call-to-action space-bottom'><a class='cta main small space-top' href="retos.html">Buscar</a></div>
 					</div>
 				</div>
 				<div class="navbar-header profile closed" id='profile'>
@@ -38,8 +42,8 @@
 						<polygon points="0,13 10,13 5,21"/>
                     </svg>
 					<ul id="menu" class='nav-menu'>
-						<li>Login</li>
-						<li>Crear Cuenta</li>
+						<li class='inicio'>Login</li>
+						<li class='registro'>Crear Cuenta</li>
 						<li>FAQ</li>
 						<li>Terminos y condiciones</li>
 						<li>Contacto</li>
@@ -59,5 +63,26 @@
 			<li><a href='#'><img src='img/twitter_b.png' alt='Twitter'></a></li>
 		</ul>
 	</footer>
+	<div class='overlay'>
+		<div id="sign-up" class='account-container'>
+			<div class="close-btn">X</div>
+			<h3 class="title blue-light-bg white">Registrarme</h3>
+			<input type='text' placeholder="Nombre" id='nombre'>
+			<input type='email' placeholder="Email" id='email'>
+			<input type='password' placeholder="Password" id='password'>
+			<input type="checkbox" id='c1' name="cc" checked/>
+			<label for='c1'>Acepto los terminos y condiciones<span></span></label>
+			<a class='cta secondary big space-top' href="perfil.html">Entrar</a>
+			<p class='blue-light clearfix'>¿Ya tienes una cuenta? <span class='sign-in'>Entra aquí</span></p>
+		</div>
+		<div id="sign-in" class='account-container'>
+			<div class="close-btn">X</div>
+			<h3 class="title blue-light-bg white">Entrar</h3>
+			<input type='email' placeholder="Email" id='email'>
+			<input type='password' placeholder="Password" id='password'>
+			<a class='cta secondary big space-top' href="perfil.html">Entrar</a>
+			<p class='blue-light clearfix'>¿No tienes una cuenta? <span class='sign-up'>Regístrate</span></p>
+		</div>
+	</div>
 </body>
 </html>

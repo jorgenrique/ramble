@@ -45,15 +45,42 @@ $(document).ready(function () {
 	//Menu Bar hide/show function
 	$('#profile').on("click", function () {
 		$('#menu').toggleClass("show");
+		$('#search-bar').removeClass("show");
   	});
 	$('section, footer').on("click", function () {
 		$('#menu').removeClass("show");
   	});
 	//Search Bar hide/show function
 	$('#lupa').on("click", function () {
-		$('#search-bar').show();
+		$('#search-bar').toggleClass("show");
+		$('#menu').removeClass("show");
   	});
 	$('section, footer').on("click", function () {
-		$('#search-bar').hide();
+		$('#search-bar').removeClass("show");
   	});
+	//Cambiar entre registro y entrar a la app, desde el usuario
+	$('.sign-up').click(function(){
+		$('#sign-in').hide();
+		$('#sign-up').show();
+	})
+	$('.sign-in').click(function(){
+		$('#sign-up').hide();
+		$('#sign-in').show();
+	})
+	$('.inicio').click(function(){
+		$('.overlay').show();
+		$('#sign-in').show();
+	})
+	$('.registro').click(function(){
+		$('.overlay').show();
+		$('#sign-up').show();
+	})
+	$('.close-btn').click(function(){
+		$('.overlay').hide();
+		$('.account-container').hide();
+	})
+	$('.overlay').click(function(){
+		$(this).hide();
+		$('.account-container').hide();
+	})
 });
