@@ -19,8 +19,8 @@
 	<header class="col-xs-12 background-purple" id='header_home'>
 		<img src='img/logo.png'>
 		<div class="account">
-			<a href='#'>Entrá</a>
-			<a href='#'>Registrate</a>
+			<a href='#' class='inicio'>Entrá</a>
+			<a href='#' class='registro'>Registrate</a>
 		</div>
     </header>
 	<section id='home'>
@@ -109,5 +109,27 @@
 			<li><a href='#'><img src='img/twitter_b.png' alt='Twitter'></a></li>
 		</ul>
 	</footer>
+	<div class='overlay'>
+		<div class='overlay-bg'></div>
+		<div id="sign-up" class='account-container'>
+			<div class="close-btn">X</div>
+			<h3 class="title blue-light-bg white">Registrarme</h3>
+			<input type='text' placeholder="Nombre" id='nombre'>
+			<input type='email' placeholder="Email" id='email'>
+			<input type='password' placeholder="Password" id='password'>
+			<input type="checkbox" id='c1' name="cc" checked/>
+			<label for='c1'>Acepto los terminos y condiciones<span></span></label>
+			<a class='cta secondary big space-top' href="perfil.html">Entrar</a>
+			<p class='blue-light clearfix'>¿Ya tienes una cuenta? <span class='sign-in'>Entra aquí</span></p>
+		</div>
+		<div id="sign-in" class='account-container'>
+			<div class="close-btn">X</div>
+			<h3 class="title blue-light-bg white">Entrar</h3>
+			<input type='email' placeholder="Email" id='email'>
+			<input type='password' placeholder="Password" id='password'>
+			<a class='cta secondary big space-top' href="perfil.html">Entrar</a>
+			<p class='blue-light clearfix'>¿No tienes una cuenta? <span class='sign-up'>Regístrate</span></p>
+		</div>
+	</div>
 </body>
 </html>

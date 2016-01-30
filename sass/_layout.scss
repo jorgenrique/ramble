@@ -250,13 +250,20 @@ footer{
 }
 .overlay{
     display:none;
-    position:fixed;
+    z-index:10;
+    position:absolute;
     width:100vw;
     height:100vh;
     top:0;
-    left:0;
-    background-color:rgba($white,$alpha_3);
-    z-index:10;
+    .overlay-bg{
+        position:fixed;
+        width:100vw;
+        height:100vh;
+        top:0;
+        left:0;
+        background-color:rgba($white,$alpha_3);
+
+    }
     .account-container{
         display:none;
         width:80%;

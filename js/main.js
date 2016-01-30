@@ -79,8 +79,8 @@ $(document).ready(function () {
 		$('.overlay').hide();
 		$('.account-container').hide();
 	})
-	$('.overlay').click(function(){
-		$(this).hide();
+	$('.overlay-bg').click(function(){
+		$('.overlay').hide();
 		$('.account-container').hide();
 	})
 });
