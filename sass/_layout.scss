@@ -28,6 +28,9 @@ body{
     font-size:16px;
     height:100%;
 }
+.space-between{
+    @include space-between;
+}
 .left{
     float:left;
 }
@@ -245,7 +248,7 @@ footer{
 .show{
     display:block;
 }
-.inicio,.registro{
+.inicio,.registro,.ver-mapa{
     cursor:pointer;
 }
 .overlay{
@@ -263,6 +266,24 @@ footer{
         left:0;
         background-color:rgba($white,$alpha_3);
 
+    }
+    .map{
+        width:80vw;
+        height:80vh;
+        top:10vh;
+        margin:auto;
+        position:relative;
+        background-color:$white;
+        @include shadow;
+        display:none;
+        .close-btn{
+            position:absolute;
+            color:$blue-light;
+            right:0;
+            top:-40px;
+            font-size:30px;
+            cursor:pointer;
+        }
     }
     .account-container{
         display:none;
@@ -313,4 +334,7 @@ footer{
 
         }
     }
+}
+.mapa-sub-cont{
+    @include space-between;
 }

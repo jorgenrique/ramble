@@ -1,0 +1,45 @@
+.btn-filtro{
+    border:3px solid $blue-light;
+    color:$blue-light;
+    margin:auto;
+    padding:0.5rem 1rem;
+    text-align:center;
+    width:60%;
+    cursor:pointer;
+    display:block;
+    &:hover{
+        opacity:$alpha;
+    }
+}
+a.btn-filtro{
+    margin-top:2rem;
+}
+.filtro-cont{
+    height:0;
+    overflow:hidden;
+}
+.filtro{
+    padding-bottom:2rem;
+    margin-bottom:2rem;
+    border-bottom:1px solid $purple;
+    clear:both;
+    &:last-of-type{
+        border:none;
+    }
+    .icon{
+        &.active{
+            border-bottom:4px solid $blue-light;
+        }
+    }
+    label{
+        margin-bottom:2rem;
+    }
+}
+.cerrar-filtros{
+    float:right;
+    font-size:2rem;
+    cursor:pointer;
+}
+.ver-mapa{
+    text-decoration:underline;
+}

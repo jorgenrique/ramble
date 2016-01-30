@@ -3,6 +3,9 @@ $(document).ready(function () {
 	$('.select').selectOrDie({
 		placeholder:"¿Qué quieres hacer?"
 	});
+	$('#filtro-hora').selectOrDie({
+		placeholder:"Momento del dia"
+	});
 	//Categories select
 	$('.cat-item').click(function(){
 		$(this).addClass('selected');
@@ -82,5 +85,24 @@ $(document).ready(function () {
 	$('.overlay-bg').click(function(){
 		$('.overlay').hide();
 		$('.account-container').hide();
+		$('.map').hide();
 	})
+	//comportamiento filtros
+	$('#btn-open-filtro').click(function(){
+		$('.filtro-cont').animate({height:850},300);
+		$(this).replaceWith("<a class='small space-top btn-filtro' id='btn-close-filtro' href='retos.html'>Filtrar</a>")
+	});
+	$('.cerrar-filtros').click(function(){
+		$('.filtro-cont').animate({height:0},300);
+		$('#btn-close-filtro').replaceWith("<div class='small cont-closed btn-filtro' id='btn-open-filtro'>Filtros +</div>")
+	})
+	$('.icon').click(function(){
+		$(this).toggleClass("active");
+	})
+	//ver mapa
+	$('.ver-mapa').click(function(){
+		$('.overlay').show();
+		$('#map').show();
+	})
+	$("#date").datepicker()
 });

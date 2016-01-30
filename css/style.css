@@ -107,8 +107,7 @@ hr {
     color: #fff;
     border: 3px solid #64296d; }
     .cta.main:hover {
-      background-color: transparent;
-      color: #64296d; }
+      opacity: 0.6; }
     .cta.main:active {
       background-color: rgba(238, 238, 238, 0.4); }
   .cta.secondary {
@@ -116,9 +115,7 @@ hr {
     background-color: #2ab6c4;
     color: #fff; }
     .cta.secondary:hover {
-      background-color: transparent;
-      color: #2ab6c4;
-      background-color: rgba(238, 238, 238, 0.4); }
+      opacity: 0.6; }
     .cta.secondary:active {
       background-color: rgba(238, 238, 238, 0.4); }
   .cta.full {
@@ -331,6 +328,12 @@ body {
   font-size: 16px;
   height: 100%; }
 
+.space-between {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between; }
+
 .left {
   float: left; }
 
@@ -531,7 +534,7 @@ footer {
 .show {
   display: block; }
 
-.inicio, .registro {
+.inicio, .registro, .ver-mapa {
   cursor: pointer; }
 
 .overlay {
@@ -548,6 +551,23 @@ footer {
     top: 0;
     left: 0;
     background-color: rgba(255, 255, 255, 0.8); }
+  .overlay .map {
+    width: 80vw;
+    height: 80vh;
+    top: 10vh;
+    margin: auto;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.2s ease-in-out;
+    display: none; }
+    .overlay .map .close-btn {
+      position: absolute;
+      color: #2ab6c4;
+      right: 0;
+      top: -40px;
+      font-size: 30px;
+      cursor: pointer; }
   .overlay .account-container {
     display: none;
     width: 80%;
@@ -589,6 +609,12 @@ footer {
       .overlay .account-container p span {
         text-decoration: underline;
         cursor: pointer; }
+
+.mapa-sub-cont {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between; }
 
 #header_home {
   display: -webkit-flex;
@@ -706,5 +732,44 @@ footer {
   .perfil .interes:after {
     content: 'X';
     margin-left: 10px; }
+
+.btn-filtro {
+  border: 3px solid #2ab6c4;
+  color: #2ab6c4;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  width: 60%;
+  cursor: pointer;
+  display: block; }
+  .btn-filtro:hover {
+    opacity: 0.6; }
+
+a.btn-filtro {
+  margin-top: 2rem; }
+
+.filtro-cont {
+  height: 0;
+  overflow: hidden; }
+
+.filtro {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #64296d;
+  clear: both; }
+  .filtro:last-of-type {
+    border: none; }
+  .filtro .icon.active {
+    border-bottom: 4px solid #2ab6c4; }
+  .filtro label {
+    margin-bottom: 2rem; }
+
+.cerrar-filtros {
+  float: right;
+  font-size: 2rem;
+  cursor: pointer; }
+
+.ver-mapa {
+  text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */

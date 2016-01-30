@@ -6,11 +6,13 @@
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/selectordie.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <!-- jQuery library -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<script src="js/selectordie.js"></script>
     <script src="js/main.js"></script>
@@ -43,8 +45,8 @@
 						<polygon points="0,13 10,13 5,21"/>
                     </svg>
 					<ul id="menu" class='nav-menu'>
-						<li>Login</li>
-						<li>Crear Cuenta</li>
+						<li class='inicio'>Login</li>
+						<li class='registro'>Crear Cuenta</li>
 						<li>FAQ</li>
 						<li>Terminos y condiciones</li>
 						<li>Contacto</li>
@@ -54,9 +56,56 @@
         </nav>
     </header>
 	<section id='retos' class='main_cont'>
-		<h2 class='clearfix container move-left purple space-top'>Retos</h2>
-		<p class='clearfix container move-left'>Barcelona, copas</p>
-		<div class='retos'>
+		<h1 class='clearfix container purple space-top'>Retos</h1>
+		<div class='mapa-sub-cont col-xs-12'>
+			<p class=''>Barcelona, copas</p>
+			<p class='purple ver-mapa'>Ver Mapa</p>
+		</div>
+		<div class='filtros col-xs-12 space-top clearfix'>
+			<div class='filtro-cont'>
+				<div class='cerrar-filtros purple'>X</div>
+				<div class='filtro'>
+					<h3 class='purple'>¿Cuando?</h3>
+					<input type='text' placeholder='Ej: 12/01/2016' id='date'>
+					<input type="checkbox" id='c1' name="cc" checked/>
+					<label class='blue-light' for='c1'>Mi reto se puede hacer todos los dias<span></span></label>
+					<select id='filtro-hora'>
+						<option value="am">Mañana</option>
+						<option value="m">Tarde</option>
+						<option value="pm">Noche</option>
+					</select>
+				</div>
+				<div class='filtro'>
+					<h3 class='purple'>¿Con quién?</h3>
+					<div class='icons space-between space-top'>
+						<div class='icon'><img id="" src='img/perfil.png'></div>
+						<div class='icon'><img id="" src='img/perfil.png'></div>
+						<div class='icon'><img id="" src='img/perfil.png'></div>
+						<div class='icon'><img id="" src='img/perfil.png'></div>
+					</div>
+				</div>
+				<div class='filtro'>
+					<h3 class='purple'>¿Cuanto toma?</h3>
+					<div class='icons space-between space-top'>
+						<div class='icon'><img id="" src='img/perfil.png'></div>
+						<div class='icon'><img id="" src='img/perfil.png'></div>
+						<div class='icon'><img id="" src='img/perfil.png'></div>
+						<div class='icon'><img id="" src='img/perfil.png'></div>
+					</div>
+				</div>
+				<div class='filtro'>
+					<h3 class='purple'>Precio</h3>
+					<div class='icons space-between space-top'>
+						<div class='icon'><img id="" src='img/perfil.png'></div>
+						<div class='icon'><img id="" src='img/perfil.png'></div>
+						<div class='icon'><img id="" src='img/perfil.png'></div>
+						<div class='icon'><img id="" src='img/perfil.png'></div>
+					</div>
+				</div>
+			</div>
+			<div class='small cont-closed btn-filtro' id='btn-open-filtro'>Filtros +</div>
+		</div>
+		<div class='retos space-top clearfix'>
 			<div class='reto white clearfix'>
 				<div class='velo'></div>
 				<h3>Nombre del reto</h3>
@@ -99,11 +148,6 @@
 		</div>
 	</section>
 	<footer>
-		<ul class='secondary-menu flex'>
-			<li><a href='#'>FAQ</a></li>
-			<li><a href='#'>Términos y condiciones</a></li>
-			<li><a href='#'>Contacto</a></li>
-		</ul>
 		<ul class='social-icons flex'>
 			<li><a href='#'><img src='img/fb_b.png' alt='Facebook'></a></li>
 			<li><a href='#'><img src='img/twitter_b.png' alt='Twitter'></a></li>
@@ -111,5 +155,30 @@
 			<li><a href='#'><img src='img/twitter_b.png' alt='Twitter'></a></li>
 		</ul>
 	</footer>
+	<div class='overlay'>
+		<div class='overlay-bg'></div>
+		<div id="sign-up" class='account-container'>
+			<div class="close-btn">X</div>
+			<h3 class="title blue-light-bg white">Registrarme</h3>
+			<input type='text' placeholder="Nombre" id='nombre'>
+			<input type='email' placeholder="Email" id='email'>
+			<input type='password' placeholder="Password" id='password'>
+			<input type="checkbox" id='c1' name="cc" checked/>
+			<label for='c1'>Acepto los terminos y condiciones<span></span></label>
+			<a class='cta secondary big space-top' href="perfil.html">Entrar</a>
+			<p class='blue-light clearfix'>¿Ya tienes una cuenta? <span class='sign-in'>Entra aquí</span></p>
+		</div>
+		<div id="sign-in" class='account-container'>
+			<div class="close-btn">X</div>
+			<h3 class="title blue-light-bg white">Entrar</h3>
+			<input type='email' placeholder="Email" id='email'>
+			<input type='password' placeholder="Password" id='password'>
+			<a class='cta secondary big space-top' href="perfil.html">Entrar</a>
+			<p class='blue-light clearfix'>¿No tienes una cuenta? <span class='sign-up'>Regístrate</span></p>
+		</div>
+		<div id="map" class='map'>
+			<div class="close-btn">X</div>
+		</div>
+	</div>
 </body>
 </html>

@@ -36,8 +36,7 @@ hr{
         color:$white;
         border:3px solid $purple;
         &:hover{
-            background-color:transparent;
-            color:$purple;
+            opacity:$alpha;
         }
         &:active{
             background-color:rgba($grey-light,$alpha_2);
@@ -48,9 +47,7 @@ hr{
         background-color:$blue-light;
         color:$white;
         &:hover{
-            background-color:transparent;
-            color:$blue-light;
-            background-color:rgba($grey-light,$alpha_2);
+            opacity:$alpha;
         }
         &:active{
             background-color:rgba($grey-light,$alpha_2);
