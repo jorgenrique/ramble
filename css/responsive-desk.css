@@ -1,0 +1,45 @@
+@media screen and (min-width: 992px) {
+    
+    #home h1 {
+        font-size: 3rem;
+        margin-top: 152px;
+    }
+    
+    #home .home-intro {
+        padding-bottom: 0px;
+    }
+    
+    #home .home-intro p {
+        margin-top: 37px;
+        width: 49.4%;
+        max-width: 504.2px;
+        font-size: 1.25rem;
+    }
+    
+    #home .home-intro input {
+        display: block;
+        margin: 25.5px auto 24.5px auto;
+        width: 21.1%;
+        max-width: 216px;
+    }
+    
+    #home .home-intro .sod_select {
+        display: block;
+        width: 21.1%;
+        max-width: 216px;
+        margin: 0px auto 0px auto;
+    }
+    
+    #home .home-intro .sod_select {
+        
+    }
+    
+    #home .home-intro div:first-of-type a {
+        display: block;
+        width: 182px;
+        height: 40px;
+        margin: 52px auto 97px auto;
+        float: none;
+    }
+    
+}
