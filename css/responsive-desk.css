@@ -1,0 +1,108 @@
+@media screen and (min-width: 768px) {
+    
+    header img {
+        width: auto;
+        height: auto;
+        min-height: none;
+        max-height: none;
+    }
+    
+    .account {
+        font-size: 1.1rem; 
+    }
+    
+    #home h1:first-of-type {
+        font-family: 'Oswald', sans-serif;
+        font-size: 3rem;
+        margin-top: 86px;
+    }
+    
+    #home .home-intro {
+        width: 100%;
+        padding-bottom: 0px;
+        background-image: url(/img/background-desktop.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #home p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+    
+    #home .home-intro p {
+        margin-top: 37px;
+        width: 52%;
+        max-width: 504.2px;
+        font-size: 1.25rem;
+    }
+    
+    #home .home-intro input {
+        font-family: 'Oswald', sans-serif;
+        display: block;
+        margin: 25.5px auto 24.5px auto;
+        width: 22.5%;
+    }
+    
+    #home .home-intro .sod_select {
+        display: block;
+        width: 22.5%;
+        margin: 0px auto 0px auto;
+    }
+    
+    #home .home-intro .sod_select .sod_list_wrapper {
+        width: 100%;
+    }
+    
+    #home .home-intro div:first-of-type a {
+        display: block;
+        width: 19%;
+        height: 40px;
+        margin: 52px auto 97px auto;
+        float: none;
+    }
+    
+    #home .pasos-home {
+        max-width: 450.7px;
+        margin: 62px auto 0px auto;
+    }
+    
+    #home h1:nth-child(3) {
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.8rem;
+        width: 90%;
+        max-width: 923px;
+        padding: 0px;
+        margin: 121px auto 27px auto;
+        /*Oswald*/
+    }
+    
+    #home .retos {
+        width: 90%;
+        max-width: 923px;
+        min-width: 739px;
+        margin: auto auto 30px auto;
+        -webkit-display: flex;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #home .reto {
+        float: left;
+        width: 24%;
+        max-width: 221px;
+        min-width: 180px;
+        margin-bottom: 33px;
+    }
+    
+    #home .reto .bar {
+        height: 49px;
+    }
+    
+    footer {
+        width: 100%;
+    }
+    
+}
