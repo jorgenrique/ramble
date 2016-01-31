@@ -6,11 +6,13 @@
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/selectordie.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <!-- jQuery library -->
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<script src="js/selectordie.js"></script>
     <script src="js/main.js"></script>
@@ -47,7 +49,7 @@
 						<li>FAQ</li>
 						<li>Terminos y condiciones</li>
 						<li>Contacto</li>
-						<li>Cerrar Sesión</li>
+						<li><a href='home.html'>Cerrar Sesión</a></li>
 					</ul>
 				</div>
 			</div>
@@ -93,14 +95,6 @@
 			</div>
 			<div class='paso' id='paso-3'>
 				<h2 class="clearfix purple">Define tu reto</h2>
-				<form>
-					<label class='clearfix space-bottom'>Definir mejor diseno</label>
-					<div class='cta secondary space-bottom small cta_2' id="paso-3-atras">< Atras</div>
-					<div class='cta secondary space-bottom small cta_2' id="paso-3-continuar">Continuar ></div>
-				</form>
-			</div>
-			<div class='paso' id='paso-4'>
-				<h2 class="clearfix purple">Características</h2>
 				<h3 class="clearfix purple">Tipo de plan</h3>
 				<div class='flex categoria tipo-plan'>
 					<div class='cat-item'>X</div>
@@ -112,7 +106,14 @@
 				</div>
 				<hr>
 				<h3 class="clearfix purple">Cuando?</h3>
-				<p>Resover mejor</p>
+				<input type='text' placeholder='Ej: 12/01/2016' id='date'>
+				<input type="checkbox" id='c1' name="cc" checked/>
+				<label class='blue-light' for='c1'>Mi reto se puede hacer todos los dias<span></span></label>
+				<select id='filtro-hora'>
+					<option value="am">Mañana</option>
+					<option value="m">Tarde</option>
+					<option value="pm">Noche</option>
+				</select>
 				<hr>
 				<h3 class="clearfix purple">Quienes?</h3>
 				<div class='flex categoria tipo-plan'>
@@ -137,16 +138,27 @@
 					<div class='cat-item'>X</div>
 					<div class='cat-item'>X</div>
 				</div>
+				<div class='cta secondary space-bottom small cta_2' id="paso-3-atras">< Atras</div>
+				<div class='cta secondary space-bottom small cta_2' id="paso-3-continuar">Continuar ></div>
+			</div>
+			<div class='paso' id='paso-4'>
+				<h2 class="clearfix purple space-bottom">Hagamos la ruta</h2>
+				<div class='pasos-agregar space-bottom'>
+					<h3 class='purple'>Paso 1</h3>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae nunc dignissim, aliquet augue eget, 	malesuada sem. Aenean finibus risus et neque interdum, quis rutrum leo fringilla. Sed sed enim sed eros mollis 	eleifend.</p>
+					<h3 class='purple'>Paso 2</h3>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae nunc dignissim, aliquet augue eget, 	malesuada sem. Aenean finibus risus et neque interdum, quis rutrum leo fringilla. Sed sed enim sed eros mollis 	eleifend. Nunc elit ex, eleifend a tellus quis, varius accumsan felis. Pellentesque tortor dui, mollis ut velit eget, mattis aliquam neque. Praesent eget convallis tortor. Phasellus ultrices tincidunt urna, ac ornare leo suscipit ac. Maecenas fringilla magna in leo viverra, quis dignissim nibh aliquet. Nullam lacus mi, luctus nec.</p>
+					<h3 class='purple'>Paso 3</h3>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae nunc dignissim, aliquet augue eget, 	malesuada sem. Aenean finibus risus et neque interdum, quis rutrum leo fringilla.</p>
+					<h3 class='purple'>Paso 4</h3>
+					<textarea placeholder='Describe la siguiente accion'></textarea>
+				</div>
+				<div class='cta main big clearfix space-bottom'>Agregar pasos +</div>
 				<div class='cta secondary space-bottom small cta_2' id="paso-4-atras">< Atras</div>
 				<div class='cta secondary space-bottom small cta_2'>Guardar</div>
 			</div>
 	</section>
 	<footer>
-		<ul class='secondary-menu flex'>
-			<li><a href='#'>FAQ</a></li>
-			<li><a href='#'>Términos y condiciones</a></li>
-			<li><a href='#'>Contacto</a></li>
-		</ul>
 		<ul class='social-icons flex'>
 			<li><a href='#'><img src='img/fb_b.png' alt='Facebook'></a></li>
 			<li><a href='#'><img src='img/twitter_b.png' alt='Twitter'></a></li>
