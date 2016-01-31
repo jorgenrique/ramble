@@ -9,6 +9,7 @@
     
     .account {
         font-size: 1.1rem; 
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
     }
     
     #home h1:first-of-type {
@@ -20,7 +21,7 @@
     #home .home-intro {
         width: 100%;
         padding-bottom: 0px;
-        background-image: url(/img/background-desktop.jpeg);
+        background-image: url(../img/background-desktop.jpeg);
         background-size: cover;
         background-position: center;
     }
@@ -42,11 +43,13 @@
         display: block;
         margin: 25.5px auto 24.5px auto;
         width: 22.5%;
+        min-width: 260px;
     }
     
     #home .home-intro .sod_select {
         display: block;
         width: 22.5%;
+        min-width: 260px;
         margin: 0px auto 0px auto;
     }
     
@@ -261,6 +264,127 @@
         font-size: 0.875rem;
         font-weight: 300;
     }
+    
+    
+    
+    
+    /* Ruta ------------------------------------------------------------- */
+    
+    #ruta h1:first-of-type, #subtitle-ruta {
+        display: none;
+    }
+    
+    #ruta .pasos {
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.5rem;
+        max-width: 310px;
+        margin: 50px auto auto auto;
+    }
+    
+    #ruta .paso {
+        
+    }
+    
+    #ruta #paso-1 h2 {
+        display: none;
+    }
+    
+    #ruta #paso-1 p:first-of-type {
+        margin: 42px auto 18.4px auto;
+        text-align: center;
+    }
+    
+    #ruta #paso-1 div:first-of-type {
+        width: 68%;
+        max-width: 960px;
+        height: 14.5vw;
+        max-height: 205.8px;
+        margin: auto auto;
+        float: none;
+        overflow: hidden;
+    }
+    
+    #ruta #paso-1 div:first-of-type img {
+        width: 100%;
+        margin-top: -100px;
+    }
+    
+    #ruta #paso-1 div:first-of-type h3 {
+        margin: 0px;
+        left: 150px;
+    }
+    
+    #ruta h3:nth-child(4) {
+        text-align: center;
+        width: 100%;
+        max-width: 960px;
+        margin-top: 43.7px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 6.5px;
+        padding: 0px;
+        float: none;
+        font-size: 1.5rem;
+    }
+    
+    #ruta #paso-1 p:last-of-type {
+        text-align: center;
+        width: 100%;
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 18px;
+        padding: 0px;
+        float: none;
+        font-size: 1rem;
+    }
+    
+    #mapa-paso1-ruta {
+        width: 59%;
+        max-width: 874,5px;
+        height: 20.8vw;
+        max-height: 307.9px;
+        margin: auto auto 60px auto;
+        float: none;
+        overflow: hidden;
+    }
+    
+    #mapa-paso1-ruta img {
+        width: 100%;
+    }
+    
+    #ruta #paso-1-continuar {
+        width: 25.6%;
+        max-width: 246px;
+    }
+    
+    #paso-2-continuar {
+        width: 246px;
+        float: right;
+        margin-right: 34.1%;
+    }
+    
+    #ruta #paso-2-atras {
+        font-size: 1rem;
+        width: auto;
+        float: left;
+        margin-left: 34.1%;
+        color: #2ab6c4;
+        background-color: #fff;
+        border: #fff;
+    }
+    
+    #paso-3-atras {
+        font-size: 1rem;
+        color: #2ab6c4;
+        background-color: #fff;
+        border: #fff;
+    }
+    
+    #concluir-reto {
+
+    }
+    
 }
 
 @media screen and (min-width:996px) {
