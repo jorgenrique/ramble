@@ -3,20 +3,23 @@
     header img {
         width: auto;
         height: auto;
+        min-height: none;
+        max-height: none;
     }
     
     .account {
-        font-size: 1.5rem;    
+        font-size: 1.1rem;    
     }
     
-    #home h1 {
+    #home h1:first-of-type {
         font-size: 3rem;
-        margin-top: 2px;
+        margin-top: 0px;
     }
     
     #home .home-intro {
         width: 100%;
         padding-bottom: 0px;
+        background-image: url(/img/background-desktop.jpeg);
     }
     
     #home .home-intro p {
@@ -29,14 +32,12 @@
     #home .home-intro input {
         display: block;
         margin: 25.5px auto 24.5px auto;
-        width: 21.1%;
-        max-width: 216px;
+        width: 216px;
     }
     
     #home .home-intro .sod_select {
         display: block;
-        width: 21.1%;
-        max-width: 216px;
+        width: 216px;
         margin: 0px auto 0px auto;
     }
     
@@ -67,6 +68,7 @@
     #home .retos {
         width: 90%;
         max-width: 923px;
+        min-width: 739px;
         margin: auto auto 30px auto;
         -webkit-display: flex;
         display: flex;
@@ -79,6 +81,7 @@
         float: left;
         width: 24%;
         max-width: 221px;
+        min-width: 180px;
         margin-bottom: 33px;
     }
     
@@ -88,6 +91,14 @@
     
     footer {
         width: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .account {
+        font-size: 1.5rem;    
     }
     
 }
