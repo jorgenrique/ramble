@@ -98,15 +98,7 @@
             }
         }
         .completed{
-            position:absolute;
-            top:1rem;
-            right:1rem;
-            color:$blue-light;
-            padding:5px 10px;
-            background-color:rgba($black,$alpha);
-            &.not{
-                color:$red;
-            }
+            margin-bottom:3rem;
         }
     }
 }

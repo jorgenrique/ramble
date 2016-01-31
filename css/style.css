@@ -16,7 +16,7 @@
   background-color: #64296d; }
 
 .purple-bg-op {
-  background-color: rgba(100, 41, 109, 0.4); }
+  background-color: rgba(100, 41, 109, 0.6); }
 
 .blue-dark {
   color: #186c73; }
@@ -705,20 +705,15 @@ footer {
         float: left;
         margin-left: 1rem; }
     .retos .reto .completed {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      color: #2ab6c4;
-      padding: 5px 10px;
-      background-color: rgba(37, 37, 35, 0.6); }
-      .retos .reto .completed.not {
-        color: #d0021b; }
+      margin-bottom: 3rem; }
 
 .perfil .image {
   width: 30%;
   height: 30%;
   max-width: 200px;
   float: left; }
+  .perfil .image img {
+    width: 100%; }
 .perfil .name {
   width: 65%;
   margin: 0 0 1rem 5%;
