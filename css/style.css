@@ -390,6 +390,9 @@ section {
             padding: 1rem 2rem;
             text-align: right;
             font-weight: 300; }
+            #header_inner nav .element .navbar-header .nav-menu li a {
+              color: #fff;
+              font-weight: inherit; }
         #header_inner nav .element .navbar-header.search {
           padding-right: 2rem; }
           #header_inner nav .element .navbar-header.search img {
@@ -513,9 +516,7 @@ footer {
   justify-content: space-around; }
   .pasos .pasos-sel {
     background-color: #2ab6c4;
-    display: none;
     color: #fff;
-    border-radius: 25px;
     cursor: pointer;
     height: 50px;
     line-height: 50px;
@@ -615,6 +616,10 @@ footer {
   display: flex;
   -webkit-justify-content: space-between;
   justify-content: space-between; }
+
+#ruta-crear .paso .cta_2 {
+  float: left;
+  margin: 0 5%; }
 
 #header_home {
   display: -webkit-flex;

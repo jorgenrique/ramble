@@ -15,20 +15,20 @@ $(document).ready(function () {
 		$(this).remove();
 	})
 	//Pasos hide/show function
-	$('#paso-1-sel').click(function(){
+	$('#paso-1-sel, #paso-2-atras').click(function(){
 		$('.paso').hide();
 		$('#paso-1').show();
 		$('.pasos-sel').removeClass('active');
 		$('#paso-1-sel').addClass('active');
 	})
-	$('#paso-2-sel').click(function(){
+	$('#paso-2-sel, #paso-1-continuar, #paso-3-atras').click(function(){
 		$('.paso').hide();
 		$('#paso-2').show();
 		$('.pasos-sel').removeClass('active');
 		$('#paso-1-sel').addClass('active');
 		$('#paso-2-sel').addClass('active');
 	})
-	$('#paso-3-sel').click(function(){
+	$('#paso-3-sel, #paso-2-continuar, #paso-4-atras').click(function(){
 		$('.paso').hide();
 		$('#paso-3').show();
 		$('.pasos-sel').removeClass('active');
@@ -36,7 +36,7 @@ $(document).ready(function () {
 		$('#paso-2-sel').addClass('active');
 		$('#paso-3-sel').addClass('active');
 	})
-	$('#paso-4-sel').click(function(){
+	$('#paso-4-sel, #paso-3-continuar').click(function(){
 		$('.paso').hide();
 		$('#paso-4').show();
 		$('.pasos-sel').removeClass('active');
@@ -104,5 +104,6 @@ $(document).ready(function () {
 		$('.overlay').show();
 		$('#map').show();
 	})
+	//Datepicker para filtro
 	$("#date").datepicker()
 });

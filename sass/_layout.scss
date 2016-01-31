@@ -85,6 +85,10 @@ section{
                         padding:1rem 2rem;
                         text-align:right;
                         font-weight:300;
+                        a{
+                            color:$white;
+                            font-weight:inherit;
+                        }
                     }
                 }
                 &.search{
@@ -225,9 +229,8 @@ footer{
     @include space-around;
     .pasos-sel{
         background-color: $blue-light;
-        display:none;
         color:$white;
-        border-radius: 25px;
+        //border-radius: 25px;
         cursor: pointer;
         height: 50px;
         line-height: 50px;
@@ -337,4 +340,12 @@ footer{
 }
 .mapa-sub-cont{
     @include space-between;
+}
+#ruta-crear{
+    .paso{
+        .cta_2{
+            float:left;
+            margin:0 5%;
+        }
+    }
 }
