@@ -8,12 +8,17 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/selectordie.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/responsive-desk.css">
+    <!-- Tipografías -->
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
     <!-- jQuery library -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<script src="js/selectordie.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/responsive.jquery.js"></script>
 </head>
 <body>
 	<header class="col-xs-12 purple-bg clearfix" id='header_inner'>
@@ -55,34 +60,33 @@
     </header>
 	<section id='perfil' class='main_cont'>
 		<div class='container perfil'>
-			<div class='clearfix'>
-				<div class='image'><img src='img/profile_header.jpg' alt='Foto de Perfil'></div>
-				<h3 class='name purple'>Benito Camelas</h3>
-				<p class='name'>Barcelona, Spain</p>
-			</div>
-			<h2 class='clearfix purple space-top'>Intereses</h2>
-			<div class='intereses'>
-				<div class='interes purple'>Musica</div>
-				<div class='interes purple'>Gastronomia</div>
-				<div class='interes purple'>Natraleza</div>
-				<div class='interes purple'>Sexo</div>
-				<div class='interes purple'>Licor</div>
-				<div class='interes purple'>Rock & Roll</div>
-			</div>
-			<div class='cta main big clearfix'>Agregar intereses +</div>
+                <div class='image'><img src='img/profile_header.jpg' alt='Foto de Perfil'></div>
+                <h3 class='name purple'>Benito Camelas</h3>
+                <p class='name'>Barcelona, Spain</p>
+                <h2 class='clearfix purple space-top'>Intereses</h2>
+                <div class='intereses'>
+                    <div class='interes purple'>Musica</div>
+                    <div class='interes purple'>Gastronomia</div>
+                    <div class='interes purple'>Natraleza</div>
+                    <div class='interes purple'>Sexo</div>
+                    <div class='interes purple'>Licor</div>
+                    <div class='interes purple'>Rock & Roll</div>
+                </div>
+                <div id="agrega-intereses" class='cta main big clearfix'>Agregar intereses</div>
 		</div>
 		<h2 class='clearfix move-left purple space-top'>Retos</h2>
 		<div class='retos'>
 			<div class='reto grey-light clearfix'>
-				<h3 class='completed'>Nombre del reto</h3>
-				<div class='bar purple-bg-op clearfix'>
+				<h3>Nombre del reto</h3>
+                <div class="cta secondary small complete cta-retos">Completar</div>
+				<div class='bar completbar purple-bg-op clearfix'>
 					<div class='left blue-light'>Completo</div>
 					<div class='right'>08/02/15</div>
 				</div>
 			</div>
 			<div class='reto grey-light clearfix'>
 				<h3>Nombre del reto</h3>
-				<div class="cta secondary small">Completar</div>
+				<div class="cta secondary small cta-retos">Completar</div>
 				<div class='bar purple-bg-op clearfix'>
 					<div class='left red'>Incompleto</div>
 					<div class='right'>08/02/15</div>
@@ -90,15 +94,16 @@
 			</div>
 			<div class='reto grey-light clearfix'>
 				<h3>Nombre del reto</h3>
-				<div class="cta secondary small">Completar</div>
+				<div class="cta secondary small cta-retos">Completar</div>
 				<div class='bar purple-bg-op clearfix'>
 					<div class='left red'>Incompleto</div>
 					<div class='right'>08/02/15</div>
 				</div>
 			</div>
 			<div class='reto grey-light clearfix'>
-				<h3 class='completed'>Nombre del reto</h3>
-				<div class='bar purple-bg-op clearfix'>
+				<h3>Nombre del reto</h3>
+                <div class="cta secondary small complete cta-retos">Completar</div>
+				<div class='bar completbar purple-bg-op clearfix'>
 					<div class='left blue-light'>Completo</div>
 					<div class='right'>08/02/15</div>
 				</div>

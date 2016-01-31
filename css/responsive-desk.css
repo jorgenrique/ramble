@@ -74,7 +74,6 @@
         max-width: 923px;
         padding: 0px;
         margin: 121px auto 27px auto;
-        /*Oswald*/
     }
     
     #home .retos {
@@ -105,4 +104,170 @@
         width: 100%;
     }
     
+    
+    
+    /* PERFIL ------------------------------------------------------------- */
+    
+    #header_inner {
+        box-shadow: 0px 0px 0px #fff;;
+    }
+    
+    #perfil .perfil {
+        width: 95%;
+        max-width: 1020px;
+        float: none;
+        margin: auto auto auto auto;
+        padding: 0px;
+    }
+    
+   .image {
+        float: left;
+        margin: auto 0px 0px auto;
+    }
+    
+    .perfil img {
+        float: left;
+        margin: auto 0px 0px auto;
+    }
+    
+    .perfil .name {
+        float: left;
+        margin: auto auto 0px 20px;
+        padding: 0px 0px; 
+    }
+    
+    .perfil h3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        height: 32px;
+    }
+    
+    .perfil p {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    
+    .perfil h2 {
+        display: block;
+        width: 60%;
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.125rem;
+        height: 26px;
+        text-align: left;
+        float: left;
+        clear: none;
+        margin: 10px 0px 20px 20px;
+    }
+    
+    #perfil .intereses {
+        width: 40%;
+        height: 58px;
+        margin: auto auto auto 20px;
+        float: left;
+        clear: none;
+    }
+    
+    #perfil .intereses div {
+        float: left;
+        width: 130px;
+        height: 24px;
+        text-align: center;
+        line-height: 12px;
+        margin: auto 10px 10px auto;
+    }
+    
+    #agrega-intereses {
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.125rem;
+        float: left;
+        width: 180px;
+        height: 40px;
+        margin: 0px;
+        padding: 0px;
+        clear: none;
+        background-color: #fff;
+        border: 0px;
+        color: #64296d;
+    }
+    
+    #agrega-intereses::before {
+        font-family: 'Roboto', sans-serif;
+        content: "+";
+        padding: 5px 10px;
+        display: inline;
+        background-color: #64296d;
+        margin: auto 10px auto 0px;
+        color: white;
+        font-size: 1.5rem;
+    }
+    
+    #perfil h2:nth-child(2) {
+        width: 95%;
+        max-width: 1020px;
+        height: auto;
+        margin: 48px auto auto auto;
+        padding: 0px;
+    }
+    
+    #perfil .retos {
+        width: 95%;
+        max-width: 1020px;
+        margin: 18px auto 22px auto;
+        -webkit-display: flex;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #perfil .reto {
+        width: 23%;
+        height: auto;
+        padding-top: 60px;
+    }
+    
+    #perfil .reto h3 {
+        font-size: 1.25rem;
+        margin-top: 0px;
+    }
+    
+    .complete {
+        visibility: hidden
+    }
+    
+    #perfil .reto .cta-retos {
+        text-align: center;
+        width: 70%;
+        max-width: 171px;
+    }
+    
+    #perfil .retos .reto .bar {
+        padding: 10px 0px;
+    }
+    
+    #perfil .reto div div:first-of-type, #perfil .reto div div:last-of-type {
+        margin: auto auto auto 8%;
+        float: left;
+        display: block;
+        width: 90%;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    #perfil .reto div div:last-of-type {
+        font-size: 0.875rem;
+        font-weight: 300;
+    }
+}
+
+@media screen and (min-width:996px) {
+    #perfil .intereses {
+        width: 50%;
+        max-width: none;
+        height: 58px;
+        margin: auto auto auto 20px;
+        float: left;
+        clear: none;
+    }
 }
