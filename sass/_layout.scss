@@ -293,9 +293,10 @@ footer{
         width:80%;
         max-width:320px;
         margin:auto;
-        position:relative;
+        position:fixed;
         top:50%;
-        transform:translateY(-50%);
+        left:50%;
+        transform:translate(-50%,-50%);
         background-color:$white;
         @include shadow;
         text-align:center;
@@ -341,7 +342,7 @@ footer{
 .mapa-sub-cont{
     @include space-between;
 }
-#ruta-crear{
+#ruta-crear, #ruta{
     .paso{
         .cta_2{
             float:left;

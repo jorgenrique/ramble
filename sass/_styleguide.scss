@@ -82,9 +82,10 @@ input[type="radio"] + label span {
     display:inline-block;
     width:20px;
     height:20px;
-    margin:0 4px 0 1rem;
+    margin:0 1rem 0 0;
     vertical-align:middle;
     background:url(../img/icon-sprite.png) -20px top no-repeat;
+    float:left;
 }
 input[type="radio"]:checked + label span {
     background:url(../img/icon-sprite.png) left top no-repeat;

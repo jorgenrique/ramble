@@ -1,0 +1,55 @@
+#ruta{
+    .image{
+        position:relative;
+        h3{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            text-shadow:0 2px 2px $black;
+        }
+    }
+    .selector_cont{
+        text-align:center;
+    }
+    .pasos-agregar{
+        border-top:1px solid $purple;
+        padding-top:1rem;
+    }
+    .paso-ruta{
+        border-bottom:1px solid $purple;
+        padding-bottom:1rem;
+        margin-bottom:2rem;
+        h3{
+            float:left;
+        }
+        .arrow{
+            float:right;
+            margin-top:1rem;
+            line-height:1.5rem;
+        }
+        .paso-desc{
+            display:none;
+        }
+        &.active{
+            .paso-desc{
+                display:block;
+            }
+            .arrow{
+                transform:rotate(180deg);
+            }
+        }
+    }
+}
+#felicidades{
+    a{
+        display:block;
+    }
+    h3{
+        text-align:center;
+    }
+}
+.social{
+    @include space-around;
+    margin-bottom:1rem;
+}

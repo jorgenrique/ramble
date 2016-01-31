@@ -106,4 +106,14 @@ $(document).ready(function () {
 	})
 	//Datepicker para filtro
 	$("#date").datepicker()
+	//Ruta logica para pasos
+	$('.paso-ruta').click(function(){
+		$('.paso-ruta').removeClass('active');
+		$(this).addClass('active');
+	})
+	//concluir reto
+	$('#concluir-reto').click(function(){
+		$('.overlay').show();
+		$('#felicidades').show();
+	})
 });

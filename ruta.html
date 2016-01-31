@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>RAMBLE</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/selectordie.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <!-- jQuery library -->
+    <!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="js/selectordie.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body class='mobile'>
+	<header class="col-xs-12 purple-bg clearfix" id='header_inner'>
+        <nav class="navigation">
+            <div class="element logo clearfix"><a href="home.html"><img src='img/logo.png'></a></div>
+			<div class="element clearfix">
+				<div class="navbar-header search">
+					<img id="lupa" src='img/lupa.png'>
+					<div id="search-bar" class="nav-menu search-bar">
+						<input class='clearfix' type="text" value="Barcelona">
+						<select class="select">
+							<option value="volvo">Comida</option>
+							<option value="saab">Copas</option>
+							<option value="mercedes">Café</option>
+							<option value="audi">Música en vivo</option>
+							<option value="audi">Fiesta</option>
+							<option value="audi">Naturaleza</option>
+							<option value="audi">Historia &amp; Arte</option>
+							<option value="audi">Random</option>
+						</select>
+						<div class='clearfix call-to-action space-bottom'><a class='cta main small space-top' href="retos.html">Buscar</a></div>
+					</div>
+				</div>
+				<div class="navbar-header profile closed" id='profile'>
+					<img src='img/profile_header.jpg'>
+					<svg class="svg-triangle" xmlns="http://www.w3.org/2000/svg" width="10" height="34" version="1.1">
+						<polygon points="0,13 10,13 5,21"/>
+                    </svg>
+					<ul id="menu" class='nav-menu'>
+						<li><a href='ruta-crear.html'>Crear ruta</a></li>
+						<li>FAQ</li>
+						<li>Terminos y condiciones</li>
+						<li>Contacto</li>
+						<li><a href='home.html'>Cerrar Sesión</a></li>
+					</ul>
+				</div>
+			</div>
+        </nav>
+    </header>
+	<section id='ruta' class='container main_cont'>
+			<h1 class="clearfix purple space-top">Crea tu reto</h1>
+			<p class="clearfix space-bottom">Sigue los pasos para compartir tu reto</p>
+			<div class='flex pasos space-bottom'>
+				<div id='paso-1-sel' class='active pasos-sel'>1</div>
+				<div id='paso-2-sel' class='pasos-sel'>2</div>
+				<div id='paso-3-sel' class='pasos-sel'>3</div>
+			</div>
+			<div class='paso' id='paso-1'>
+				<h2 class="clearfix purple">Datos generales</h2>
+				<p class='blue-light'>Si quieres jugar offline, <a href="#">descarga el PDF</a></p>
+				<div class="clearfix container-override image space-top space-bottom">
+					<img src="https://unsplash.it/600/300/?random" alt="reto">
+					<h3 class='white'>Nombre del reto</h3>
+				</div>
+				<h3 class='purple space-top'>Empieza aqui</h3>
+				<p>Avenida SiempreViva 123</p>
+				<div class="clearfix container-override image space-top">
+					<img src="https://unsplash.it/600/300/?random" alt="reto">
+				</div>
+				<div class='cta secondary space-bottom full' id="paso-1-continuar">Continuar ></div>
+			</div>
+			<div class='paso' id='paso-2'>
+				<h2 class="clearfix purple space-bottom">Sigue los pasos</h2>
+				<div class='pasos-agregar space-bottom'>
+					<div class='paso-ruta active clearfix'>
+						<h3 class='purple'>Paso 1</h3>
+						<div class='arrow purple'>&#x25BC;</div>
+						<p class='paso-desc clearfix'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae nunc dignissim, aliquet augue eget, malesuada sem. Aenean finibus risus et neque interdum, quis rutrum leo fringilla. Sed sed enim sed eros mollis 	eleifend.</p>
+					</div>
+					<div class='paso-ruta clearfix'>
+						<h3 class='purple'>Paso 2</h3>
+						<div class='arrow purple'>&#x25BC;</div>
+						<p class='paso-desc clearfix'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae nunc dignissim, aliquet augue eget, malesuada sem. Aenean finibus risus et neque interdum, quis rutrum leo fringilla. Sed sed enim sed eros mollis	eleifend. Nunc elit ex, eleifend a tellus quis, varius accumsan felis. Pellentesque tortor dui, mollis ut velit eget, mattis aliquam neque. Praesent eget convallis tortor. Phasellus ultrices tincidunt urna, ac ornare leo suscipit ac. Maecenas fringilla magna in leo viverra, quis dignissim nibh aliquet. Nullam lacus mi, luctus nec.</p>
+					</div>
+					<div class='paso-ruta clearfix'>
+						<h3 class='purple'>Paso 3</h3>
+						<div class='arrow purple'>&#x25BC;</div>
+						<p class='paso-desc clearfix'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae nunc dignissim, aliquet augue eget, malesuada sem. Aenean finibus risus et neque interdum, quis rutrum leo fringilla.</p>
+					</div>
+				</div>
+				<div class='cta secondary space-bottom small cta_2' id="paso-2-atras">< Atras</div>
+				<div class='cta secondary space-bottom small cta_2' id="paso-2-continuar">Continuar ></div>
+			</div>
+			<div class='paso' id='paso-3'>
+				<h2 class="clearfix purple space-bottom">Valida el destino</h2>
+				<div class="selector_cont">
+					<input type="radio" id='r1' name='rb' checked/>
+					<label for='r1'>Destino 1<span></span></label>
+				</div>
+				<div class="selector_cont">
+					<input type="radio" id='r2' name='rb'/>
+					<label for='r2'>Destino 2<span></span></label>
+				</div>
+				<div class="selector_cont space-bottom">
+					<input type="radio" id='r3' name='rb'/>
+					<label for='r3'>Destino 3<span></span></label>
+				</div>
+				<div class='cta secondary space-bottom small cta_2' id="paso-3-atras">< Atras</div>
+				<div class='cta secondary space-bottom small cta_2' id="concluir-reto">Finalizar</div>
+			</div>
+	</section>
+	<footer>
+		<ul class='social-icons flex'>
+			<li><a href='#'><img src='img/fb_b.png' alt='Facebook'></a></li>
+			<li><a href='#'><img src='img/twitter_b.png' alt='Twitter'></a></li>
+			<li><a href='#'><img src='img/fb_b.png' alt='Facebook'></a></li>
+			<li><a href='#'><img src='img/twitter_b.png' alt='Twitter'></a></li>
+		</ul>
+	</footer>
+	<div class='overlay'>
+		<div class='overlay-bg'></div>
+		<div id="felicidades" class='account-container'>
+			<div class='top-img'></div>
+			<h2 class="blue-light">¡Felicitaciones!</h2>
+			<p class="purple">Has completado el reto</p>
+			<div class='completo-icono'></div>
+			<h3 color='purple'>Nombre del reto</h3>
+			<a class='cta secondary big clearfix space-bottom'>Finalizar</a>
+			<ul class='social clearfix'>
+				<li><a href='#'><img src='img/fb_b.png' alt='Facebook'></a></li>
+				<li><a href='#'><img src='img/twitter_b.png' alt='Twitter'></a></li>
+				<li><a href='#'><img src='img/fb_b.png' alt='Facebook'></a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
