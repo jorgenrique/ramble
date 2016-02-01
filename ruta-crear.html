@@ -78,9 +78,9 @@
 					   <div id="cta-subirfoto-ruta" class='cta main big'>Subir foto</div>
                     </div>
                     <div id=wrapper2-paso1-form>
-                        <label class='clearfix'>Ponle un nombre a tu reto</label>
-                        <input type='text' placeholder='ej: Restaurante hermoso'>
-                        <label class='clearfix'>Descríbelo brevemente</label>
+                        <label class='clearfix nl'>Ponle un nombre a tu reto</label>
+                        <input class='nl' type='text' placeholder='ej: Restaurante hermoso'>
+                        <label class='clearfix nl'>Descríbelo brevemente</label>
                         <textarea placeholder='ej: Restaurante hermoso' class='space-bottom'></textarea>
                     </div>
 				</form>
@@ -90,65 +90,77 @@
 				<h2 class="clearfix purple">Origen y destino</h2>
                 <h3 class="clearfix purple">DEFINE LA UBICACIÓN EN EL MAPA</h3>
 				<form>
-					<label class='clearfix'>Dirección</label>
-					<input type='text' placeholder='ej: Restaurante hermoso'>
+					<label class='clearfix nl'>Dirección</label>
+					<input type='text' class="nl" placeholder='ej: Restaurante hermoso'>
 					<div class="clearfix container-override image">
 						<img src="https://unsplash.it/600/300/?random" alt="reto">
 					</div>
 					<div class='cta main big'>Guardar Posición</div>
-					<label class='clearfix'>Nombre del destino</label>
-					<input type='text' placeholder='ej: Restaurante hermoso' class='space-bottom'>
+					<label class='clearfix nl'>Nombre del destino</label>
+					<input type='text' class="nl" placeholder='ej: Restaurante hermoso' class='space-bottom'>
 				</form>
                 <div class='cta secondary space-bottom small cta_2' id="paso-2-atras">< Atras</div>
 				<div class='cta secondary space-bottom small cta_2' id="paso-2-continuar">Continuar ></div>
 			</div>
 			<div class='paso' id='paso-3'>
 				<h2 class="clearfix purple">Define tu reto</h2>
-				<h3 class="clearfix purple">Tipo de plan</h3>
-				<div class='flex categoria tipo-plan'>
-					<div class='cat-item'>X</div>
-					<div class='cat-item'>X</div>
-					<div class='cat-item'>X</div>
-					<div class='cat-item'>X</div>
-					<div class='cat-item'>X</div>
-					<div class='cat-item'>X</div>
-				</div>
-				<hr>
-				<h3 class="clearfix purple">Cuando?</h3>
-				<input type='text' placeholder='Ej: 12/01/2016' id='date'>
-				<input type="checkbox" id='c1' name="cc" checked/>
-				<label class='blue-light' for='c1'>Mi reto se puede hacer todos los dias<span></span></label>
-				<select id='filtro-hora'>
-					<option value="am">Mañana</option>
-					<option value="m">Tarde</option>
-					<option value="pm">Noche</option>
-				</select>
-				<hr>
-				<h3 class="clearfix purple">Quienes?</h3>
-				<div class='flex categoria tipo-plan'>
-					<div class='cat-item'>X</div>
-					<div class='cat-item'>X</div>
-					<div class='cat-item'>X</div>
-					<div class='cat-item'>X</div>
-				</div>
-				<hr>
-				<h3 class="clearfix purple">Tiempo</h3>
-				<div class='flex categoria tipo-plan'>
-					<div class='cat-item'>X</div>
-					<div class='cat-item'>X</div>
-					<div class='cat-item'>X</div>
-					<div class='cat-item'>X</div>
-				</div>
-				<hr>
-				<h3 class="clearfix purple">Precio</h3>
-				<div class='flex categoria tipo-plan space-bottom'>
-					<div class='cat-item'>X</div>
-					<div class='cat-item'>X</div>
-					<div class='cat-item'>X</div>
-					<div class='cat-item'>X</div>
-				</div>
-				<div class='cta secondary space-bottom small cta_2' id="paso-3-atras">< Atras</div>
-				<div class='cta secondary space-bottom small cta_2' id="paso-3-continuar">Continuar ></div>
+                <section class="col-md-12">
+                    <article class="col-md-12">
+                        <h3 class="clearfix purple">Tipo de plan</h3>
+                        <div class='flex categoria tipo-plan'>
+                            <div class='cat-item'>X</div>
+                            <div class='cat-item'>X</div>
+                            <div class='cat-item'>X</div>
+                            <div class='cat-item'>X</div>
+                            <div class='cat-item'>X</div>
+                            <div class='cat-item'>X</div>
+                        </div>
+                    </article>
+                    <hr>
+                    <article class="col-md-6">
+                        <h3 class="clearfix purple">Quienes?</h3>
+                        <div class='flex categoria tipo-plan'>
+                            <div class='cat-item'>X</div>
+                            <div class='cat-item'>X</div>
+                            <div class='cat-item'>X</div>
+                            <div class='cat-item'>X</div>
+                        </div>
+                    </article>
+                    <hr>
+                    <article class="col-md-6">
+                        <h3 class="clearfix purple filter-desk">Tiempo</h3>
+                        <div class='flex categoria tipo-plan'>
+                            <div class='cat-item'>X</div>
+                            <div class='cat-item'>X</div>
+                            <div class='cat-item'>X</div>
+                            <div class='cat-item'>X</div>
+                        </div>
+                    </article>
+                    <hr>
+                    <article class="col-md-6">
+                        <h3 class="clearfix purple">Precio</h3>
+                        <div class='flex categoria tipo-plan space-bottom'>
+                            <div class='cat-item'>X</div>
+                            <div class='cat-item'>X</div>
+                            <div class='cat-item'>X</div>
+                            <div class='cat-item'>X</div>
+                        </div>
+                    </article>
+                    <hr>
+                    <article class="col-md-6">
+                        <h3 class="clearfix purple">Cuando?</h3>
+                        <input type="checkbox" id='c1' name="cc" checked/>
+                        <label class='blue-light' for='c1'><span></span>Mi reto se puede hacer todos los dias</label>
+                        <input type='text' placeholder='Ej: 12/01/2016' id='date'>
+                        <select id='filtro-hora'>
+                            <option value="am">Mañana</option>
+                            <option value="m">Tarde</option>
+                            <option value="pm">Noche</option>
+                        </select>
+                    </article>
+                </section>
+                <div class='cta secondary space-bottom small cta_2' id="paso-3-atras">< Atras</div>
+                <div class='cta secondary space-bottom small cta_2' id="paso-3-continuar">Continuar ></div>
 			</div>
 			<div class='paso' id='paso-4'>
 				<h2 class="clearfix purple space-bottom">Hagamos la ruta</h2>
@@ -164,7 +176,7 @@
 				</div>
 				<div class='cta main big clearfix space-bottom'>Agregar pasos +</div>
 				<div class='cta secondary space-bottom small cta_2' id="paso-4-atras">< Atras</div>
-				<div class='cta secondary space-bottom small cta_2'>Guardar</div>
+				<div class='cta secondary space-bottom small cta_2' id="paso-4-guardar">Guardar</div>
 			</div>
 	</section>
 	<footer>

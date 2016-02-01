@@ -1,4 +1,27 @@
+.mdle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+.nl {
+    display: block;
+    clear: both;
+}
+
+#ruta-crear #paso-3 section {
+     margin-bottom: 50px;
+}
+
 @media screen and (min-width: 768px) {
+    
+    .flex-atr {
+         -webkit-display: flex;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     
     header img {
         width: auto;
@@ -518,6 +541,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         justify-content:flex-start;
+        margin-bottom: 50px;
     }
     
     #ruta-crear #paso-2 form .image {
@@ -571,17 +595,80 @@
         float: none;
     }
     
-    #ruta-crear #paso-2 #paso-2-atras {
+    #ruta-crear #paso-2 #paso-2-atras, #ruta-crear #paso-3 #paso-3-atras, #ruta-crear #paso-4 #paso-4-atras {
         width: 121px;
-        margin: auto 0px auto 35.1%;
+        margin: auto 0px auto 34.1%;
         background-color: #fff;
         border: 0px none;
         color: #2ab6c4;
     }
     
-    #ruta-crear #paso-2 #paso-2-continuar {
-        
+    #ruta-crear #paso-3 #paso-3-continuar, #ruta-crear #paso-4 #paso-4-guardar {
+        width: 121px;
     }
+    
+    #ruta-crear #paso-3 {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #ruta-crear #paso-3 section {
+        margin-bottom: 90px;
+    }
+    
+    #ruta-crear #paso-3 section article label {
+        margin-bottom: 0px;
+    }
+    
+    #ruta-crear #paso-3 section article {
+        border-top: 1px solid #000;
+        box-sizing: border-box;
+        padding: 0px auto 10px auto;
+    }
+    
+    #ruta-crear #date {
+        height: 20px;
+        display: block;
+        width: 40%;
+    }
+    
+    #filtro-hora {
+        height: 20px;
+    }
+    
+    #ruta-crear #paso-4 .pasos-agregar {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #ruta-crear #paso-4 .pasos-agregar h3, #ruta-crear #paso-4 .pasos-agregar p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #ruta-crear #paso-4 .pasos-agregar h3 {
+        max-width: 600px
+    }
+    
+    #ruta-crear #paso-4 .pasos-agregar p {
+        margin-bottom: 60px;
+    }
+    
+    #ruta-crear #paso-4 .pasos-agregar textarea {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        display: block;
+    }
+    
+    #ruta-crear #paso-4 div:nth-child(3) {
+        width: 30%;
+    }
+    
+    
 }
 
 @media screen and (min-width:996px) {
