@@ -385,6 +385,203 @@
 
     }
     
+    
+    
+    
+    /* Crear Ruta ---------------------------------------------- */
+    
+    #ruta-crear h1:nth-child(1) {
+        font-size: 1.875rem;
+        margin: 30px auto 3px 5.2%;
+    }
+    
+    #ruta-crear p:first-of-type {
+        font-size: 1rem;
+        margin: auto auto 40.2px 5.2%;
+    }
+    
+    #ruta-crear .pasos {
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.5rem;
+        max-width: 310px;
+        margin: 50px auto 40.3px auto;
+    }
+    
+    #ruta-crear #paso-1 {
+        width: 90%;
+        margin: auto;
+    }
+    
+    #ruta-crear h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: auto auto 38px auto;
+    }
+    
+    #ruta-crear #paso-1 form {
+        -webkit-display: flex;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        height: auto;
+        margin: auto auto 64.4px auto;
+        padding: 0px;
+        width: 100%;
+    }
+    
+    #ruta-crear #paso-1 #wrapper1-paso1-form {
+        width: 55%;
+    }
+    
+    #ruta-crear #paso-1 #wrapper2-paso1-form {
+        width: 40%;
+    }
+    
+    #ruta-crear #paso-1 form .image {
+        float: left;
+        clear: none;
+        width: 100%;
+        margin: 0px auto 5px 0px;
+    }
+    
+    #ruta-crear #paso-1 form div:first-of-type img {
+        width: 100%;
+    }
+    
+    #ruta-crear #cta-subirfoto-ruta {
+        float: left;
+        clear: none;
+        width: 500%;
+        height: 40px;
+        max-width: 300px;
+        margin: auto;
+    }
+    
+    #ruta-crear #paso-1 form label:first-of-type {
+        display: block;
+        float: left;
+        margin: 0px;
+        width: 100%;
+    }
+    
+    #ruta-crear #paso-1 form input:first-of-type{
+        display: block;
+        float: left;
+        margin: 0px 0px 15px 0px;
+        height: 39px;
+        max-width: none;
+        width: 90%;
+    }
+    
+    #ruta-crear #paso-1 form  label:last-of-type {
+        width: 100%;
+        display: block;
+        float: left;
+        margin: 0px;
+    }
+    
+    #ruta-crear #paso-1 form textarea {
+        display: block;
+        float: left;
+        width: 90%;
+        margin: 0px;
+        height: 16.5vw;
+    }
+    
+    #ruta-crear #paso-1-continuar {
+        width: 30%;
+        margin: auto;
+        float: none;
+        clear: both;
+    }
+    
+    #ruta-crear {
+        width: 100%;
+    }
+    
+    #ruta-crear #paso-2 {
+        width: 100%;
+    }
+    
+    #ruta-crear #paso-2 h3 {
+        font-family: 'Oswald', sans-serif;
+        text-align: left;
+        font-size: 1.125rem;
+        margin: 38px auto 16px auto;
+        width: 63.1%;
+    }
+    
+    #ruta-crear #paso-2 form {
+        -webkit-display: flex;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+    }
+    
+    #ruta-crear #paso-2 form .image {
+        margin: auto auto 19px auto;
+        float: none;
+        order: 1;
+        width: 63.1%;
+        height: 22.3vw;
+        overflow: hidden;
+    }
+    
+    #ruta-crear #paso-2 form .image img {
+        width: 100%;
+    }
+    
+    #ruta-crear #paso-2 form div:last-of-type {
+        order: 2;
+        margin: auto auto 36.4px auto;
+        float: none;
+        width: 171px;
+        height: 40px;
+    }
+    
+    #ruta-crear #paso-2 form label:first-of-type {
+        order: 3;
+        margin: auto auto 10px auto;
+        float: none;
+        text-align: left;
+        width: 238px;
+    }
+    
+    #ruta-crear #paso-2 form input {
+        order: 4;
+        margin: auto auto 35px auto;
+        float: none;
+        height: 24px;
+        width: 238px;
+    }
+    
+    #ruta-crear #paso-2 form label:last-of-type {
+        order: 5;
+        margin: auto auto 10px auto;
+        float: none;
+        text-align: left;
+        width: 238px;
+    }
+    
+    #ruta-crear #paso-2 form input:last-of-type {
+        order: 6;
+        margin: auto auto auto auto;
+        float: none;
+    }
+    
+    #ruta-crear #paso-2 #paso-2-atras {
+        width: 121px;
+        margin: auto 0px auto 35.1%;
+        background-color: #fff;
+        border: 0px none;
+        color: #2ab6c4;
+    }
+    
+    #ruta-crear #paso-2 #paso-2-continuar {
+        
+    }
 }
 
 @media screen and (min-width:996px) {

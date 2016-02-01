@@ -9,6 +9,10 @@
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/selectordie.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/responsive-desk.css">
+    <!-- Tipografías -->
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     <!-- jQuery library -->
     <!-- Latest compiled and minified JavaScript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -67,19 +71,24 @@
 			<div class='paso' id='paso-1'>
 				<h2 class="clearfix purple">Datos generales</h2>
 				<form>
-					<label class='clearfix'>Ponle un nombre a tu reto</label>
-					<input type='text' placeholder='ej: Restaurante hermoso'>
-					<div class="clearfix container-override image">
-						<img src="https://unsplash.it/600/300/?random" alt="reto">
-					</div>
-					<div class='cta main big'>Subir foto</div>
-					<label class='clearfix'>Descríbelo brevemente</label>
-					<textarea placeholder='ej: Restaurante hermoso' class='space-bottom'></textarea>
-					<div class='cta secondary space-bottom full' id="paso-1-continuar">Continuar ></div>
+                    <div id=wrapper1-paso1-form>
+					   <div class="clearfix container-override image">
+						  <img src="https://unsplash.it/600/300/?random" alt="reto">
+					   </div>
+					   <div id="cta-subirfoto-ruta" class='cta main big'>Subir foto</div>
+                    </div>
+                    <div id=wrapper2-paso1-form>
+                        <label class='clearfix'>Ponle un nombre a tu reto</label>
+                        <input type='text' placeholder='ej: Restaurante hermoso'>
+                        <label class='clearfix'>Descríbelo brevemente</label>
+                        <textarea placeholder='ej: Restaurante hermoso' class='space-bottom'></textarea>
+                    </div>
 				</form>
+                <div class='cta secondary space-bottom full' id="paso-1-continuar">Continuar ></div>
 			</div>
 			<div class='paso' id='paso-2'>
 				<h2 class="clearfix purple">Origen y destino</h2>
+                <h3 class="clearfix purple">DEFINE LA UBICACIÓN EN EL MAPA</h3>
 				<form>
 					<label class='clearfix'>Dirección</label>
 					<input type='text' placeholder='ej: Restaurante hermoso'>
@@ -89,9 +98,9 @@
 					<div class='cta main big'>Guardar Posición</div>
 					<label class='clearfix'>Nombre del destino</label>
 					<input type='text' placeholder='ej: Restaurante hermoso' class='space-bottom'>
-					<div class='cta secondary space-bottom small cta_2' id="paso-2-atras">< Atras</div>
-					<div class='cta secondary space-bottom small cta_2' id="paso-2-continuar">Continuar ></div>
 				</form>
+                <div class='cta secondary space-bottom small cta_2' id="paso-2-atras">< Atras</div>
+				<div class='cta secondary space-bottom small cta_2' id="paso-2-continuar">Continuar ></div>
 			</div>
 			<div class='paso' id='paso-3'>
 				<h2 class="clearfix purple">Define tu reto</h2>
