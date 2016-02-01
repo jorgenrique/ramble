@@ -15,32 +15,32 @@
 }
 
 @media screen and (min-width: 768px) {
-    
+
     .flex-atr {
          -webkit-display: flex;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-    
+
     header img {
         width: auto;
         height: auto;
         min-height: none;
         max-height: none;
     }
-    
+
     .account {
-        font-size: 1.1rem; 
+        font-size: 1.1rem;
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
     }
-    
+
     #home h1:first-of-type {
         font-family: 'Oswald', sans-serif;
         font-size: 3rem;
         margin-top: 86px;
     }
-    
+
     #home .home-intro {
         width: 100%;
         padding-bottom: 0px;
@@ -48,19 +48,19 @@
         background-size: cover;
         background-position: center;
     }
-    
+
     #home p {
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
     }
-    
+
     #home .home-intro p {
         margin-top: 37px;
         width: 52%;
         max-width: 504.2px;
         font-size: 1.25rem;
     }
-    
+
     #home .home-intro input {
         font-family: 'Oswald', sans-serif;
         display: block;
@@ -68,18 +68,18 @@
         width: 22.5%;
         min-width: 260px;
     }
-    
+
     #home .home-intro .sod_select {
         display: block;
         width: 22.5%;
         min-width: 260px;
         margin: 0px auto 0px auto;
     }
-    
+
     #home .home-intro .sod_select .sod_list_wrapper {
         width: 100%;
     }
-    
+
     #home .home-intro div:first-of-type a {
         display: block;
         width: 19%;
@@ -87,12 +87,12 @@
         margin: 52px auto 97px auto;
         float: none;
     }
-    
+
     #home .pasos-home {
         max-width: 450.7px;
         margin: 62px auto 0px auto;
     }
-    
+
     #home h1:nth-child(3) {
         font-family: 'Oswald', sans-serif;
         font-size: 1.8rem;
@@ -101,7 +101,7 @@
         padding: 0px;
         margin: 121px auto 27px auto;
     }
-    
+
     #home .retos {
         width: 90%;
         max-width: 923px;
@@ -113,7 +113,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    
+
     #home .reto {
         float: left;
         width: 24%;
@@ -121,23 +121,23 @@
         min-width: 180px;
         margin-bottom: 33px;
     }
-    
+
     #home .reto .bar {
         height: 49px;
     }
-    
+
     footer {
         width: 100%;
     }
-    
-    
-    
+
+
+
     /* PERFIL ------------------------------------------------------------- */
-    
+
     #header_inner {
         box-shadow: 0px 0px 0px #fff;;
     }
-    
+
     #perfil .perfil {
         width: 95%;
         max-width: 1020px;
@@ -145,35 +145,35 @@
         margin: auto auto auto auto;
         padding: 0px;
     }
-    
+
    .image {
         float: left;
         margin: auto 0px 0px auto;
     }
-    
+
     .perfil img {
         float: left;
         margin: auto 0px 0px auto;
     }
-    
+
     .perfil .name {
         float: left;
         margin: auto auto 0px 20px;
-        padding: 0px 0px; 
+        padding: 0px 0px;
     }
-    
+
     .perfil h3 {
         font-family: 'Roboto', sans-serif;
         font-size: 1.5rem;
         font-weight: 500;
         height: 32px;
     }
-    
+
     .perfil p {
         font-size: 1rem;
         font-weight: 300;
     }
-    
+
     .perfil h2 {
         display: block;
         width: 60%;
@@ -185,7 +185,7 @@
         clear: none;
         margin: 10px 0px 20px 20px;
     }
-    
+
     #perfil .intereses {
         width: 40%;
         height: 58px;
@@ -193,7 +193,7 @@
         float: left;
         clear: none;
     }
-    
+
     #perfil .intereses div {
         float: left;
         width: 130px;
@@ -202,7 +202,7 @@
         line-height: 12px;
         margin: auto 10px 10px auto;
     }
-    
+
     #agrega-intereses {
         font-family: 'Oswald', sans-serif;
         font-size: 1.125rem;
@@ -216,18 +216,18 @@
         border: 0px;
         color: #64296d;
     }
-    
+
     #agrega-intereses::before {
         font-family: 'Roboto', sans-serif;
         content: "+";
-        padding: 5px 10px;
+        padding: 5px 15px;
         display: inline;
         background-color: #64296d;
         margin: auto 10px auto 0px;
         color: white;
         font-size: 1.5rem;
     }
-    
+
     #perfil h2:nth-child(2) {
         width: 95%;
         max-width: 1020px;
@@ -235,7 +235,7 @@
         margin: 48px auto auto auto;
         padding: 0px;
     }
-    
+
     #perfil .retos {
         width: 95%;
         max-width: 1020px;
@@ -246,34 +246,37 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    
+
     #perfil .reto {
         width: 23%;
         min-width: 220px;
-        height: auto;
+        height: 250px;
         padding-top: 60px;
         margin: auto 5px 30px 0px;
     }
-    
+
     #perfil .reto h3 {
         font-size: 1.25rem;
         margin-top: 0px;
     }
-    
+
     .complete {
         visibility: hidden
     }
-    
+
     #perfil .reto .cta-retos {
         text-align: center;
         width: 70%;
         max-width: 171px;
     }
-    
+
     #perfil .retos .reto .bar {
         padding: 10px 0px;
+        position:absolute;
+        bottom:0;
+        width:100%;
     }
-    
+
     #perfil .reto div div:first-of-type, #perfil .reto div div:last-of-type {
         margin: auto auto auto 8%;
         float: left;
@@ -282,41 +285,41 @@
         font-size: 1rem;
         font-weight: 500;
     }
-    
+
     #perfil .reto div div:last-of-type {
         font-size: 0.875rem;
         font-weight: 300;
     }
-    
-    
-    
-    
+
+
+
+
     /* Ruta ------------------------------------------------------------- */
-    
+
     #ruta h1:first-of-type, #subtitle-ruta {
         display: none;
     }
-    
+
     #ruta .pasos {
         font-family: 'Oswald', sans-serif;
         font-size: 1.5rem;
         max-width: 310px;
         margin: 50px auto auto auto;
     }
-    
+
     #ruta .paso {
-        
+
     }
-    
+
     #ruta #paso-1 h2 {
         display: none;
     }
-    
+
     #ruta #paso-1 p:first-of-type {
         margin: 42px auto 18.4px auto;
         text-align: center;
     }
-    
+
     #ruta #paso-1 div:first-of-type {
         width: 68%;
         max-width: 960px;
@@ -326,17 +329,17 @@
         float: none;
         overflow: hidden;
     }
-    
+
     #ruta #paso-1 div:first-of-type img {
         width: 100%;
         margin-top: -100px;
     }
-    
+
     #ruta #paso-1 div:first-of-type h3 {
         margin: 0px;
         left: 150px;
     }
-    
+
     #ruta h3:nth-child(4) {
         text-align: center;
         width: 100%;
@@ -349,7 +352,7 @@
         float: none;
         font-size: 1.5rem;
     }
-    
+
     #ruta #paso-1 p:last-of-type {
         text-align: center;
         width: 100%;
@@ -361,7 +364,7 @@
         float: none;
         font-size: 1rem;
     }
-    
+
     #mapa-paso1-ruta {
         width: 59%;
         max-width: 874,5px;
@@ -371,22 +374,22 @@
         float: none;
         overflow: hidden;
     }
-    
+
     #mapa-paso1-ruta img {
         width: 100%;
     }
-    
+
     #ruta #paso-1-continuar {
         width: 25.6%;
         max-width: 246px;
     }
-    
+
     #paso-2-continuar {
         width: 246px;
         float: right;
         margin-right: 34.1%;
     }
-    
+
     #ruta #paso-2-atras {
         font-size: 1rem;
         width: auto;
@@ -396,51 +399,51 @@
         background-color: #fff;
         border: #fff;
     }
-    
+
     #paso-3-atras {
         font-size: 1rem;
         color: #2ab6c4;
         background-color: #fff;
         border: #fff;
     }
-    
+
     #concluir-reto {
 
     }
-    
-    
-    
-    
+
+
+
+
     /* Crear Ruta ---------------------------------------------- */
-    
+
     #ruta-crear h1:nth-child(1) {
         font-size: 1.875rem;
         margin: 30px auto 3px 5.2%;
     }
-    
+
     #ruta-crear p:first-of-type {
         font-size: 1rem;
         margin: auto auto 40.2px 5.2%;
     }
-    
+
     #ruta-crear .pasos {
         font-family: 'Oswald', sans-serif;
         font-size: 1.5rem;
         max-width: 310px;
         margin: 50px auto 40.3px auto;
     }
-    
+
     #ruta-crear #paso-1 {
         width: 90%;
         margin: auto;
     }
-    
+
     #ruta-crear h2 {
         font-size: 1.5rem;
         text-align: center;
         margin: auto auto 38px auto;
     }
-    
+
     #ruta-crear #paso-1 form {
         -webkit-display: flex;
         display: flex;
@@ -452,26 +455,26 @@
         padding: 0px;
         width: 100%;
     }
-    
+
     #ruta-crear #paso-1 #wrapper1-paso1-form {
         width: 55%;
     }
-    
+
     #ruta-crear #paso-1 #wrapper2-paso1-form {
         width: 40%;
     }
-    
+
     #ruta-crear #paso-1 form .image {
         float: left;
         clear: none;
         width: 100%;
         margin: 0px auto 5px 0px;
     }
-    
+
     #ruta-crear #paso-1 form div:first-of-type img {
         width: 100%;
     }
-    
+
     #ruta-crear #cta-subirfoto-ruta {
         float: left;
         clear: none;
@@ -480,14 +483,14 @@
         max-width: 300px;
         margin: auto;
     }
-    
+
     #ruta-crear #paso-1 form label:first-of-type {
         display: block;
         float: left;
         margin: 0px;
         width: 100%;
     }
-    
+
     #ruta-crear #paso-1 form input:first-of-type{
         display: block;
         float: left;
@@ -496,14 +499,14 @@
         max-width: none;
         width: 90%;
     }
-    
+
     #ruta-crear #paso-1 form  label:last-of-type {
         width: 100%;
         display: block;
         float: left;
         margin: 0px;
     }
-    
+
     #ruta-crear #paso-1 form textarea {
         display: block;
         float: left;
@@ -511,22 +514,22 @@
         margin: 0px;
         height: 16.5vw;
     }
-    
+
     #ruta-crear #paso-1-continuar {
         width: 30%;
         margin: auto;
         float: none;
         clear: both;
     }
-    
+
     #ruta-crear {
         width: 100%;
     }
-    
+
     #ruta-crear #paso-2 {
         width: 100%;
     }
-    
+
     #ruta-crear #paso-2 h3 {
         font-family: 'Oswald', sans-serif;
         text-align: left;
@@ -534,7 +537,7 @@
         margin: 38px auto 16px auto;
         width: 63.1%;
     }
-    
+
     #ruta-crear #paso-2 form {
         -webkit-display: flex;
         display: flex;
@@ -543,7 +546,7 @@
         justify-content:flex-start;
         margin-bottom: 50px;
     }
-    
+
     #ruta-crear #paso-2 form .image {
         margin: auto auto 19px auto;
         float: none;
@@ -552,11 +555,11 @@
         height: 22.3vw;
         overflow: hidden;
     }
-    
+
     #ruta-crear #paso-2 form .image img {
         width: 100%;
     }
-    
+
     #ruta-crear #paso-2 form div:last-of-type {
         order: 2;
         margin: auto auto 36.4px auto;
@@ -564,7 +567,7 @@
         width: 171px;
         height: 40px;
     }
-    
+
     #ruta-crear #paso-2 form label:first-of-type {
         order: 3;
         margin: auto auto 10px auto;
@@ -572,7 +575,7 @@
         text-align: left;
         width: 238px;
     }
-    
+
     #ruta-crear #paso-2 form input {
         order: 4;
         margin: auto auto 35px auto;
@@ -580,7 +583,7 @@
         height: 24px;
         width: 238px;
     }
-    
+
     #ruta-crear #paso-2 form label:last-of-type {
         order: 5;
         margin: auto auto 10px auto;
@@ -588,13 +591,13 @@
         text-align: left;
         width: 238px;
     }
-    
+
     #ruta-crear #paso-2 form input:last-of-type {
         order: 6;
         margin: auto auto auto auto;
         float: none;
     }
-    
+
     #ruta-crear #paso-2 #paso-2-atras, #ruta-crear #paso-3 #paso-3-atras, #ruta-crear #paso-4 #paso-4-atras {
         width: 121px;
         margin: auto 0px auto 34.1%;
@@ -602,73 +605,73 @@
         border: 0px none;
         color: #2ab6c4;
     }
-    
+
     #ruta-crear #paso-3 #paso-3-continuar, #ruta-crear #paso-4 #paso-4-guardar {
         width: 121px;
     }
-    
+
     #ruta-crear #paso-3 {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     #ruta-crear #paso-3 section {
         margin-bottom: 90px;
     }
-    
+
     #ruta-crear #paso-3 section article label {
         margin-bottom: 0px;
     }
-    
+
     #ruta-crear #paso-3 section article {
         border-top: 1px solid #000;
         box-sizing: border-box;
         padding: 0px auto 10px auto;
     }
-    
+
     #ruta-crear #date {
         height: 20px;
         display: block;
         width: 40%;
     }
-    
+
     #filtro-hora {
         height: 20px;
     }
-    
+
     #ruta-crear #paso-4 .pasos-agregar {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     #ruta-crear #paso-4 .pasos-agregar h3, #ruta-crear #paso-4 .pasos-agregar p {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     #ruta-crear #paso-4 .pasos-agregar h3 {
         max-width: 600px
     }
-    
+
     #ruta-crear #paso-4 .pasos-agregar p {
         margin-bottom: 60px;
     }
-    
+
     #ruta-crear #paso-4 .pasos-agregar textarea {
         margin-left: auto;
         margin-right: auto;
         float: none;
         display: block;
     }
-    
+
     #ruta-crear #paso-4 div:nth-child(3) {
         width: 30%;
     }
-    
-    
+
+
 }
 
 @media screen and (min-width:996px) {

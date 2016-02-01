@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/selectordie.css" />
+	<link href="bower_components/bootstrap-star-rating/css/star-rating.min.css" media="all" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/responsive-desk.css">
     <!-- Tipografías -->
@@ -18,6 +19,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="bower_components/bootstrap-star-rating/js/star-rating.min.js" type="text/javascript"></script>
 	<script src="js/selectordie.js"></script>
     <script src="js/main.js"></script>
 </head>
@@ -134,10 +136,12 @@
 		<div id="felicidades" class='account-container'>
 			<div class='top-img'></div>
 			<h2 class="blue-light">¡Felicitaciones!</h2>
-			<p class="purple">Has completado el reto</p>
+			<p class="">Has completado el reto</p>
 			<div class='completo-icono'></div>
-			<h3 color='purple'>Nombre del reto</h3>
-			<a class='cta secondary big clearfix space-bottom'>Finalizar</a>
+			<h3 class=''>Nombre del reto</h3>
+			<p>Califícalo</p>
+			<input id="input-id" type="number" class="rating" min=0 max=5 step=1 data-size="xs" data-showClear=false showCaption=false>
+			<a class='cta secondary big clearfix' href='perfil.html'>Finalizar</a>
 			<ul class='social clearfix'>
 				<li><a href='#'><img src='img/fb_b.png' alt='Facebook'></a></li>
 				<li><a href='#'><img src='img/twitter_b.png' alt='Twitter'></a></li>

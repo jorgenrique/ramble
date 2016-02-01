@@ -813,12 +813,26 @@ a.btn-filtro {
   display: block; }
 #felicidades h3 {
   text-align: center; }
-
-.social {
+#felicidades .social {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-around;
   justify-content: space-around;
   margin-bottom: 1rem; }
+#felicidades p {
+  padding: 1rem 0;
+  margin: 0; }
+#felicidades .cta {
+  margin-bottom: 2rem; }
+#felicidades .star-rating {
+  float: left;
+  text-align: center;
+  width: 100%;
+  margin: 0; }
+  #felicidades .star-rating .clear-rating,
+  #felicidades .star-rating .caption {
+    display: none; }
+  #felicidades .star-rating .rating-container .rating-stars {
+    color: #2ab6c4; }
 
 /*# sourceMappingURL=style.css.map */

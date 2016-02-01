@@ -116,4 +116,6 @@ $(document).ready(function () {
 		$('.overlay').show();
 		$('#felicidades').show();
 	})
+	//Star Rating
+	$("#input-id").rating();
 });

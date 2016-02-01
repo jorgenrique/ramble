@@ -48,8 +48,28 @@
     h3{
         text-align:center;
     }
-}
-.social{
-    @include space-around;
-    margin-bottom:1rem;
+    .social{
+        @include space-around;
+        margin-bottom:1rem;
+    }
+    p{
+        padding:1rem 0;
+        margin:0;
+    }
+    .cta{
+        margin-bottom:2rem;
+    }
+    .star-rating{
+        float:left;
+        text-align:center;
+        width:100%;
+        margin:0;
+        .clear-rating,
+        .caption{
+            display:none;
+        }
+        .rating-container .rating-stars{
+            color:$blue-light;
+        }
+    }
 }
