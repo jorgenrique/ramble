@@ -83,7 +83,6 @@
     #home .home-intro div:first-of-type a {
         display: block;
         width: 19%;
-        height: 40px;
         margin: 52px auto 97px auto;
         float: none;
     }
@@ -116,15 +115,11 @@
 
     #home .reto {
         float: left;
-        width: 24%;
-        max-width: 221px;
+        width: 48%;
         min-width: 180px;
         margin-bottom: 33px;
     }
 
-    #home .reto .bar {
-        height: 49px;
-    }
 
     footer {
         width: 100%;

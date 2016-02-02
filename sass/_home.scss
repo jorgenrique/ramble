@@ -32,6 +32,7 @@
 }
 .home-intro{
     width:100vw;
+    height:100vh;
     position:relative;
     background-image:url(../img/home.jpg);
     background-size: cover;
@@ -54,14 +55,13 @@
         text-transform:uppercase;
     }
     input{
-        margin-left:15%;
         background-color:transparent;
         color:#fff;
         position:relative;
         z-index:1;
         width:70%;
         max-width:70%;
-        margin-bottom:2rem;
+        margin:0 0 2rem 15%;
         border:none;
         border-bottom:2px solid $white;
         font-size:24px;
