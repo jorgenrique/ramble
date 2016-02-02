@@ -561,18 +561,92 @@ textarea {
     color: #fff;
     border-color: #fff; }
 
-.iconos .sprite-2 {
+.sprite-2 {
   width: 125px;
   height: 125px;
-  background-image: url("../img/Sprite2.png"); }
-.iconos #icono-1 {
+  background-image: url("../img/sprite2.png"); }
+
+.sprite-1 {
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/sprite1.png"); }
+
+.sprite-3 {
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/sprite3.png"); }
+
+.icono-1 {
   background-position: 0 0; }
-.iconos #icono-2 {
+
+.icono-2 {
   background-position: 0 -125px; }
-.iconos #icono-3 {
+
+.icono-3 {
   background-position: -125px 0; }
-.iconos #icono-4 {
+
+.icono-4 {
   background-position: -125px -125px; }
+
+.icono-5 {
+  background-position: 0 0; }
+
+.icono-6 {
+  background-position: 0 -35px; }
+
+.icono-7 {
+  background-position: 0 -70px; }
+
+.icono-8 {
+  background-position: 0 -105px; }
+
+.icono-9 {
+  background-position: -35px 0; }
+
+.icono-10 {
+  background-position: -35px -35px; }
+
+.icono-11 {
+  background-position: -35px -70px; }
+
+.icono-12 {
+  background-position: -35px -105px; }
+
+.icono-13 {
+  background-position: 0 -140px; }
+
+.icono-14 {
+  background-position: -35px -140px; }
+
+.icono-15 {
+  background-position: -70px 0; }
+
+.icono-16 {
+  background-position: -70px -35px; }
+
+.icono-17 {
+  background-position: -70px -70px; }
+
+.icono-18 {
+  background-position: -70px -105px; }
+
+.icono-19 {
+  background-position: -70px -140px; }
+
+.icono-20 {
+  background-position: -105px 0; }
+
+.icono-21 {
+  background-position: -105px -35px; }
+
+.icono-22 {
+  background-position: -105px -70px; }
+
+.icono-23 {
+  background-position: -105px -105px; }
+
+.icono-24 {
+  background-position: -105px -140px; }
 
 a {
   color: #64296d;
