@@ -360,7 +360,11 @@ footer {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
-  justify-content: space-between; }
+  justify-content: space-between;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center; }
 
 #ruta-crear .paso .cta_2, #ruta .paso .cta_2 {
   float: left;
@@ -856,6 +860,7 @@ label {
   padding: 0.5rem 1rem;
   text-align: center;
   width: 60%;
+  max-width: 200px;
   cursor: pointer;
   display: block; }
   .btn-filtro:hover {
@@ -891,7 +896,10 @@ a.btn-filtro {
   cursor: pointer; }
 
 .ver-mapa {
-  text-decoration: underline; }
+  text-align: right; }
+  .ver-mapa span {
+    float: right;
+    margin-top: -5px; }
 
 #ruta .image {
   position: relative; }

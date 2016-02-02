@@ -345,6 +345,7 @@ footer{
 }
 .mapa-sub-cont{
     @include space-between;
+    @include center-vertical;
 }
 #ruta-crear, #ruta{
     .paso{

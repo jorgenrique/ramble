@@ -5,6 +5,7 @@
     padding:0.5rem 1rem;
     text-align:center;
     width:60%;
+    max-width:200px;
     cursor:pointer;
     display:block;
     &:hover{
@@ -49,5 +50,9 @@ a.btn-filtro{
     cursor:pointer;
 }
 .ver-mapa{
-    text-decoration:underline;
+    text-align:right;
+    span{
+        float:right;
+        margin-top:-5px;
+    }
 }
