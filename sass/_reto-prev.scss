@@ -1,0 +1,10 @@
+.iconos{
+    @include space-around;
+    h2{
+        margin-top:0;
+    }
+}
+.info{
+    @include center-vertical;
+    @include space-between;
+}

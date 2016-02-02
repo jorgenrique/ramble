@@ -278,8 +278,9 @@ footer{
         width:80vw;
         height:80vh;
         top:10vh;
+        left:10vw;
         margin:auto;
-        position:relative;
+        position:fixed;
         background-color:$white;
         @include shadow;
         display:none;
