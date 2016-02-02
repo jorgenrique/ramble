@@ -389,7 +389,7 @@ footer {
   margin-bottom: 3rem !important; }
 
 .space-top {
-  padding-top: 1rem; }
+  margin-top: 1rem !important; }
 
 .move-left {
   margin-left: 1rem; }
@@ -561,10 +561,13 @@ textarea {
     color: #fff;
     border-color: #fff; }
 
+.icono {
+  float: left; }
+
 .sprite-2 {
-  width: 125px;
-  height: 125px;
-  background-image: url("../img/sprite2.png"); }
+  width: 80px;
+  height: 80px;
+  background-image: url("../img/sprite2-mobile.png"); }
 
 .sprite-1 {
   width: 35px;
@@ -580,14 +583,28 @@ textarea {
   background-position: 0 0; }
 
 .icono-2 {
-  background-position: 0 -125px; }
+  background-position: 0 -80px; }
 
 .icono-3 {
-  background-position: -125px 0; }
+  background-position: -80px 0; }
 
 .icono-4 {
-  background-position: -125px -125px; }
+  background-position: -80px -80px; }
 
+@media screen and (min-width: 540px) {
+  .sprite-2 {
+    width: 125px;
+    height: 125px;
+    background-image: url("../img/sprite2.png"); }
+
+  .icono-2 {
+    background-position: 0 -125px; }
+
+  .icono-3 {
+    background-position: -125px 0; }
+
+  .icono-4 {
+    background-position: -125px -125px; } }
 .icono-5 {
   background-position: 0 0; }
 
@@ -646,7 +663,8 @@ textarea {
   background-position: -105px -105px; }
 
 .icono-24 {
-  background-position: -105px -140px; }
+  background-position: -112px -140px;
+  width: 20px; }
 
 a {
   color: #64296d;
@@ -739,7 +757,12 @@ label {
 .pasos-home {
   margin-bottom: 2rem; }
   .pasos-home > div {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center; }
 
 .home-intro {
   width: 100vw;
@@ -784,7 +807,8 @@ label {
     background-image: url(https://unsplash.it/600/900/?random);
     background-size: cover;
     padding-top: 3rem; }
-    .retos .reto h3 {
+    .retos .reto h3,
+    .retos .reto p {
       text-align: center;
       position: relative;
       z-index: 1;

@@ -26,6 +26,8 @@
     margin-bottom:2rem;
     >div{
         margin-bottom:2rem;
+        position:relative;
+        @include center-vertical;
     }
 }
 .home-intro{
@@ -75,7 +77,8 @@
         background-image:url(https://unsplash.it/600/900/?random);
         background-size: cover;
         padding-top:3rem;
-        h3{
+        h3,
+        p{
             text-align:center;
             position:relative;
             z-index:1;

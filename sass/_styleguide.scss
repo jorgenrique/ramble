@@ -12,7 +12,7 @@
 .big-margin{margin:3rem 0 2rem;}
 .small-margin{margin:1rem 0;}
 .space-bottom{margin-bottom:3rem !important;}
-.space-top{padding-top:1rem;}
+.space-top{margin-top:1rem !important;}
 .move-left{margin-left:1rem;}
 hr{
     background-color:$blue-light;
@@ -178,11 +178,13 @@ textarea{
         }
     }
 }
-
+.icono{
+    float:left;
+}
 .sprite-2{
-    width:125px;
-    height:125px;
-    background-image: url("../img/sprite2.png");
+    width:80px;
+    height:80px;
+    background-image: url("../img/sprite2-mobile.png");
 }
 .sprite-1{
     width:35px;
@@ -198,13 +200,29 @@ textarea{
     background-position: 0 0;
 }
 .icono-2{
-    background-position: 0 -125px;
+    background-position: 0 -80px;
 }
 .icono-3{
-    background-position: -125px 0;
+    background-position: -80px 0;
 }
 .icono-4{
-    background-position: -125px -125px;
+    background-position: -80px -80px;
+}
+@media screen and (min-width: 540px) {
+    .sprite-2{
+        width:125px;
+        height:125px;
+        background-image: url("../img/sprite2.png");
+    }
+    .icono-2{
+        background-position: 0 -125px;
+    }
+    .icono-3{
+        background-position: -125px 0;
+    }
+    .icono-4{
+        background-position: -125px -125px;
+    }
 }
 .icono-5{
     background-position: 0 0;
@@ -264,5 +282,6 @@ textarea{
     background-position: -105px -105px;
 }
 .icono-24{
-    background-position: -105px -140px;
+    background-position: -112px -140px;
+    width:20px;
 }
