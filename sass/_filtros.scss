@@ -18,6 +18,16 @@ a.btn-filtro{
 .filtro-cont{
     height:0;
     overflow:hidden;
+    .icono{
+        position:relative;
+        margin: 0 2rem;
+        span{
+            position:absolute;
+            top:30px;
+            left:50%;
+            transform:translateX(-50%);
+        }
+    }
 }
 #paso-3{
     label{
@@ -35,8 +45,8 @@ a.btn-filtro{
     &:last-of-type{
         border:none;
     }
-    .icon{
-        &.active{
+    .icono{
+        .active{
             border-bottom:4px solid $blue-light;
         }
     }

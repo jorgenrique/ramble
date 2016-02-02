@@ -96,8 +96,8 @@ $(document).ready(function () {
 		$('.filtro-cont').animate({height:0},300);
 		$('#btn-close-filtro').replaceWith("<div class='small cont-closed btn-filtro' id='btn-open-filtro'>Filtros +</div>")
 	})
-	$('.icon').click(function(){
-		$(this).toggleClass("active");
+	$('.icono').click(function(){
+		$(this).children('span').toggleClass("active");
 	})
 	//ver mapa
 	$('.ver-mapa').click(function(){

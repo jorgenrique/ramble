@@ -872,6 +872,14 @@ a.btn-filtro {
 .filtro-cont {
   height: 0;
   overflow: hidden; }
+  .filtro-cont .icono {
+    position: relative;
+    margin: 0 2rem; }
+    .filtro-cont .icono span {
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%); }
 
 #paso-3 label {
   margin-bottom: 2rem; }
@@ -885,7 +893,7 @@ a.btn-filtro {
   clear: both; }
   .filtro:last-of-type {
     border: none; }
-  .filtro .icon.active {
+  .filtro .icono .active {
     border-bottom: 4px solid #2ab6c4; }
   .filtro label {
     margin-bottom: 2rem; }
