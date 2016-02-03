@@ -185,20 +185,20 @@ textarea{
 .sprite-2{
     width:80px;
     height:80px;
-    background-image: url("../img/sprite2-mobile.png");
-    background-size:50%;
+    background-image: url("../img/sprite2.png");
+    background-size:160px auto;
 }
 .sprite-1{
     width:35px;
     height:35px;
     background-image: url("../img/sprite1.png");
-    background-size:50%;
+    background-size:140px auto;
 }
 .sprite-3{
     width:35px;
     height:35px;
     background-image: url("../img/sprite3.png");
-    background-size:50%;
+    background-size:140px auto;
 }
 .icono-1{
     background-position: 0 0;
@@ -217,6 +217,7 @@ textarea{
         width:125px;
         height:125px;
         background-image: url("../img/sprite2.png");
+        background-size:250px auto;
     }
     .icono-2{
         background-position: 0 -125px;
