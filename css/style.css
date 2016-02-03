@@ -503,6 +503,7 @@ textarea {
   float: none; }
 
 .left {
+  width: 120px;    
   float: left; }
 
 .right {
@@ -830,7 +831,7 @@ label {
       padding: 1rem 2rem; }
       .retos .reto .bar li {
         float: left;
-        margin-left: 1rem; }
+        margin-left: 0.2rem; }
     .retos .reto .completed {
       margin-bottom: 3rem; }
 
@@ -877,7 +878,7 @@ a.btn-filtro {
 
 .icono {
   position: relative;
-  margin: 0 2rem; }
+  margin: 0 0/*2rem*/; }
   .icono span {
     position: absolute;
     top: 30px;

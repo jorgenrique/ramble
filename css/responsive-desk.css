@@ -14,6 +14,11 @@
      margin-bottom: 50px;
 }
 
+.account a {
+    display: inline;
+}
+
+
 @media screen and (min-width: 768px) {
 
     .flex-atr {
@@ -23,11 +28,15 @@
         flex-wrap: wrap;
     }
 
-    header img {
+    #header_home img {
         width: auto;
         height: auto;
         min-height: none;
         max-height: none;
+    }
+    
+    header nav a img {
+        width: 50px;
     }
 
     .account {
@@ -88,8 +97,16 @@
     }
 
     #home .pasos-home {
-        max-width: 450.7px;
+        max-width: 550.7px;
         margin: 62px auto 0px auto;
+    }
+    
+    #home .pasos-home #paso-1-home .icon {
+        margin-right: 50px
+    }
+    
+    #home .pasos-home #paso-3-home .icon {
+        margin-right: 50px
     }
 
     #home h1:nth-child(3) {
@@ -119,6 +136,38 @@
         min-width: 180px;
         margin-bottom: 33px;
     }
+    
+    #home .reto .bar {
+    }
+    
+    #home .reto .left{
+        width: 30%;
+        min-width: 100px;
+        float: left;
+        margin-left: 0%;
+        margin-bottom: 0px;
+    }
+    
+    #home .reto .left div {
+        float: left;
+         margin: 0px;
+    }
+
+    .retos .reto .bar li {
+        margin-left: 5px;
+    }
+
+    #home .reto .right div {
+        float: right;
+        margin: 0px;
+    }
+
+    #home .reto .right{
+        width: 120px;
+        float: right;
+        margin-bottom: 0px;
+    }
+
 
 
     footer {
@@ -377,6 +426,13 @@
     #ruta #paso-1-continuar {
         width: 25.6%;
         max-width: 246px;
+    }
+    
+    #ruta #paso-2 {
+        width: 80%;
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #paso-2-continuar {
