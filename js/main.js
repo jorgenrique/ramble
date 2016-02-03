@@ -96,7 +96,7 @@ $(document).ready(function () {
 	})
 	//comportamiento filtros
 	$('#btn-open-filtro').click(function(){
-		$('.filtro-cont').animate({height:850},300);
+		$('.filtro-cont').animate({height:1000},300);
 		$(this).replaceWith("<a class='small space-top btn-filtro' id='btn-close-filtro' href='retos.html'>Filtrar</a>")
 	});
 	$('.cerrar-filtros').click(function(){
@@ -104,7 +104,7 @@ $(document).ready(function () {
 		$('#btn-close-filtro').replaceWith("<div class='small cont-closed btn-filtro' id='btn-open-filtro'>Filtros +</div>")
 	})
 	$('.icono').click(function(){
-		$(this).children('span').toggleClass("active");
+		$(this).toggleClass("active");
 	})
 	//ver mapa
 	$('.ver-mapa').click(function(){

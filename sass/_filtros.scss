@@ -45,7 +45,7 @@ a.btn-filtro{
         border:none;
     }
     .icono{
-        .active{
+        &.active{
             border-bottom:4px solid $blue-light;
         }
     }

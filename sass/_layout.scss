@@ -237,7 +237,6 @@ footer{
     .pasos-sel{
         background-color: $blue-light;
         color:$white;
-        //border-radius: 25px;
         cursor: pointer;
         height: 50px;
         line-height: 50px;
@@ -362,5 +361,15 @@ footer{
 .profile{
     div,svg{
         float:right;
+    }
+}
+.icons{
+    .icono{
+        text-align:center;
+        width:85px;
+        margin:1rem 0;
+        .sprite-1{
+             margin:auto 25px;
+        }
     }
 }

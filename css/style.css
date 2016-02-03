@@ -376,6 +376,13 @@ footer {
 .profile div, .profile svg {
   float: right; }
 
+.icons .icono {
+  text-align: center;
+  width: 85px;
+  margin: 1rem 0; }
+  .icons .icono .sprite-1 {
+    margin: auto 25px; }
+
 .styleguide .header {
   display: -webkit-flex;
   display: flex;
@@ -576,17 +583,20 @@ textarea {
 .sprite-2 {
   width: 80px;
   height: 80px;
-  background-image: url("../img/sprite2-mobile.png"); }
+  background-image: url("../img/sprite2-mobile.png");
+  background-size: 50%; }
 
 .sprite-1 {
   width: 35px;
   height: 35px;
-  background-image: url("../img/sprite1.png"); }
+  background-image: url("../img/sprite1.png");
+  background-size: 50%; }
 
 .sprite-3 {
   width: 35px;
   height: 35px;
-  background-image: url("../img/sprite3.png"); }
+  background-image: url("../img/sprite3.png");
+  background-size: 50%; }
 
 .icono-1 {
   background-position: 0 0; }
@@ -785,6 +795,7 @@ label {
   position: relative;
   background-image: url(../img/background-desktop.jpeg);
   background-size: cover;
+  background-position: center;
   padding: 6rem 0 2rem;
   margin-bottom: 4rem;
   position: relative; }
@@ -918,7 +929,7 @@ a.btn-filtro {
   clear: both; }
   .filtro:last-of-type {
     border: none; }
-  .filtro .icono .active {
+  .filtro .icono.active {
     border-bottom: 4px solid #2ab6c4; }
   .filtro label {
     margin-bottom: 2rem; }
