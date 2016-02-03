@@ -807,7 +807,7 @@
     
     /*-- RETO EXP ------------------*/
     #reto-prev .image {
-
+        float: left
     }
 
     #reto-prev .image img {
