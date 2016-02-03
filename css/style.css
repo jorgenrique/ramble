@@ -109,6 +109,8 @@ section {
     display: flex;
     -webkit-justify-content: space-between;
     justify-content: space-between; }
+    #header_inner nav a {
+      height: 100%; }
     #header_inner nav .element {
       height: 35px;
       display: inline-block; }
@@ -370,6 +372,9 @@ footer {
 #ruta-crear .paso .cta_2, #ruta .paso .cta_2 {
   float: left;
   margin: 0 5%; }
+
+.profile div, .profile svg {
+  float: right; }
 
 .styleguide .header {
   display: -webkit-flex;
@@ -778,7 +783,7 @@ label {
   height: 100vh;
   min-height: 500px;
   position: relative;
-  background-image: url(../img/home.jpg);
+  background-image: url(../img/background-desktop.jpeg);
   background-size: cover;
   padding: 6rem 0 2rem;
   margin-bottom: 4rem;

@@ -63,6 +63,9 @@ section{
     z-index:3;
     nav{
         @include space-between;
+        a{
+            height:100%;
+        }
         .element{
             height:35px;
             display:inline-block;
@@ -354,5 +357,10 @@ footer{
             float:left;
             margin:0 5%;
         }
+    }
+}
+.profile{
+    div,svg{
+        float:right;
     }
 }
