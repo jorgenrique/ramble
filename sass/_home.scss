@@ -33,11 +33,21 @@
 .home-intro{
     width:100vw;
     height:100vh;
+    min-height:500px;
     position:relative;
     background-image:url(../img/home.jpg);
     background-size: cover;
     padding:6rem 0 2rem;
     margin-bottom:4rem;
+    position:relative;
+    .home-cont{
+        position:absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+        width:80%;
+        max-width:600px;
+    }
     h1,h2,h3,p{
         text-align:center;
         position:relative;
@@ -96,8 +106,7 @@
             z-index:1;
             padding:1rem 2rem;
             li{
-                float:left;
-                margin-left:1rem;
+                float:right;
             }
         }
         .completed{

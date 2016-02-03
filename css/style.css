@@ -113,7 +113,7 @@ section {
       height: 35px;
       display: inline-block; }
       #header_inner nav .element .navbar-header, #header_inner nav .element img {
-        height: 35px; }
+        height: 100%; }
       #header_inner nav .element .navbar-header {
         float: left; }
         #header_inner nav .element .navbar-header svg polygon {
@@ -161,7 +161,7 @@ section {
             opacity: 1;
             background: url(../img/pin.png) no-repeat right center; }
           #header_inner nav .element .navbar-header .search-bar .sod_select {
-            width: 70vw;
+            width: 70%;
             margin-left: 15%;
             box-sizing: border-box;
             -moz-box-sizing: border-box;
@@ -434,7 +434,7 @@ hr {
   .cta.full {
     width: 100%; }
   .cta.big {
-    width: 70%; max-width: 240px; }
+    width: 70%; }
   .cta.small {
     width: 40%; }
 
@@ -503,7 +503,6 @@ textarea {
   float: none; }
 
 .left {
-  width: 120px;    
   float: left; }
 
 .right {
@@ -528,7 +527,7 @@ textarea {
 
 .home-intro .sod_select,
 .navbar-header .sod_select {
-  width: 70vw;
+  width: 70%;
   margin-left: 15%;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -773,11 +772,20 @@ label {
 .home-intro {
   width: 100vw;
   height: 100vh;
+  min-height: 500px;
   position: relative;
   background-image: url(../img/home.jpg);
   background-size: cover;
   padding: 6rem 0 2rem;
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  position: relative; }
+  .home-intro .home-cont {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px; }
   .home-intro h1, .home-intro h2, .home-intro h3, .home-intro p {
     text-align: center;
     position: relative;
@@ -830,8 +838,7 @@ label {
       z-index: 1;
       padding: 1rem 2rem; }
       .retos .reto .bar li {
-        float: left;
-        margin-left: 0.2rem; }
+        float: right; }
     .retos .reto .completed {
       margin-bottom: 3rem; }
 
@@ -878,7 +885,7 @@ a.btn-filtro {
 
 .icono {
   position: relative;
-  margin: 0 0/*2rem*/; }
+  margin: 0 2rem; }
   .icono span {
     position: absolute;
     top: 30px;
