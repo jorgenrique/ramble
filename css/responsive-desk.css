@@ -227,7 +227,7 @@
         text-align: left;
         float: left;
         clear: none;
-        margin: 10px 0px 20px 20px;
+        margin: 10px 0px 10px 20px;
     }
 
     #perfil .intereses {
@@ -240,8 +240,7 @@
 
     #perfil .intereses div {
         float: left;
-        width: 130px;
-        height: 24px;
+        width: auto;
         text-align: center;
         line-height: 12px;
         margin: auto 10px 10px auto;
@@ -252,27 +251,11 @@
         font-size: 1.125rem;
         float: left;
         width: 180px;
-        height: 40px;
-        margin: 0px;
-        padding: 0px;
+        margin: 0px 0px 90px 10px;
         clear: none;
-        background-color: #fff;
-        border: 0px;
-        color: #64296d;
     }
 
-    #agrega-intereses::before {
-        font-family: 'Roboto', sans-serif;
-        content: "+";
-        padding: 5px 15px;
-        display: inline;
-        background-color: #64296d;
-        margin: auto 10px auto 0px;
-        color: white;
-        font-size: 1.5rem;
-    }
-
-    #perfil h2:nth-child(2) {
+    #perfil .ret {
         width: 95%;
         max-width: 1020px;
         height: auto;
@@ -283,7 +266,7 @@
     #perfil .retos {
         width: 95%;
         max-width: 1020px;
-        margin: 18px auto 22px auto;
+        margin: 18px auto 52px auto;
         -webkit-display: flex;
         display: flex;
         flex-direction: row;
@@ -435,36 +418,25 @@
         margin-right: auto;
     }
 
-    #paso-2-continuar {
-        width: 246px;
-        float: right;
-        margin-right: 34.1%;
+    .wrapper-cta-pasos{
+        max-width: 500px;
+        width: 60%;
+        margin: auto;
+        -webkit-display: flex;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #ruta .paso .cta_2 {
+        max-width: 200px;
+        margin: 0px;
     }
 
-    #ruta #paso-2-atras {
-        font-size: 1rem;
-        width: auto;
-        float: left;
-        margin-left: 34.1%;
-        color: #2ab6c4;
-        background-color: #fff;
-        border: #fff;
-    }
-
-    #paso-3-atras {
-        font-size: 1rem;
-        color: #2ab6c4;
-        background-color: #fff;
-        border: #fff;
-    }
-
-    #concluir-reto {
-
-    }
-
-
-
-
+    
+    
+    
     /* Crear Ruta ---------------------------------------------- */
 
     #ruta-crear h1:nth-child(1) {
@@ -647,18 +619,6 @@
         order: 6;
         margin: auto auto auto auto;
         float: none;
-    }
-
-    #ruta-crear #paso-2 #paso-2-atras, #ruta-crear #paso-3 #paso-3-atras, #ruta-crear #paso-4 #paso-4-atras {
-        width: 121px;
-        margin: auto 0px auto 34.1%;
-        background-color: #fff;
-        border: 0px none;
-        color: #2ab6c4;
-    }
-
-    #ruta-crear #paso-3 #paso-3-continuar, #ruta-crear #paso-4 #paso-4-guardar {
-        width: 121px;
     }
 
     #ruta-crear #paso-3 {
