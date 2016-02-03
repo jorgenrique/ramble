@@ -806,22 +806,49 @@
     
     /*-- RETO EXP ------------------*/
     #reto-prev .image {
-        float: left
+        float: left;
+        width: 66.6%; 
     }
 
-    #reto-prev .image img {
-
+    #reto-prev .info {
+        float: left;
+        width: 30%;
+        margin: auto auto auto 25px;
     }
 
+    #reto-prev .cta-jugar-prev {
+        float: left;
+        width: 30%;
+        clear: none;
+        margin: auto auto auto 25px;
+    }
+    
+    #reto-prev .iconos {
+        float: left;
+        width: 30%;
+        clear: none;
+        margin: auto auto auto 25px;
+    }
+    
+    #reto-prev .info-text {
+       width: 45%;
+        float: left;
+        margin: 0px;
+    }
+    
     .comm-reto {
-
+        width: 45%;
+        float: right;
+        clear: none;
+        margin: 0px;
     }
 
     .comm-reto h3 {
+        
     }
 
     .comm-reto article {
-       
+
     }
 
     .comm-reto article div {
@@ -833,7 +860,7 @@
     }
 
     .comm-reto article p {
-        
+        width: 80%;
     }
 
     .comm-reto article span {
