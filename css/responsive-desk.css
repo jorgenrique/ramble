@@ -40,9 +40,6 @@
     100% { opacity:1; }
 }
 
-.typed-cursor, .type-wrap {
-    display: inline;
-}
 
 @media screen and (min-width: 768px) {
 
