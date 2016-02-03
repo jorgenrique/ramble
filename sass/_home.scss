@@ -47,6 +47,13 @@
         transform:translate(-50%,-50%);
         width:80%;
         max-width:600px;
+        padding:2rem 0;
+    }
+    .arrow-move-down{
+        position:absolute;
+        left:50%;
+        margin-left:-18px;
+        bottom:2rem;
     }
     h1,h2,h3,p{
         text-align:center;

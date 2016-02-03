@@ -69,7 +69,6 @@
     #home h1:first-of-type {
         font-family: 'Oswald', sans-serif;
         font-size: 3rem;
-        margin-top: 86px;
     }
 
     #home .home-intro {
@@ -114,7 +113,7 @@
     #home .home-intro div:first-of-type a {
         display: block;
         width: 19%;
-        margin: 52px auto 97px auto;
+        margin:auto;
         float: none;
     }
 

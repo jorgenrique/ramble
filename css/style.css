@@ -670,6 +670,10 @@ textarea {
   background-position: -112px -140px;
   width: 20px; }
 
+.align-icons {
+  float: left;
+  width: 50%; }
+
 a {
   color: #64296d;
   text-decoration: none;
@@ -785,7 +789,13 @@ label {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    max-width: 600px; }
+    max-width: 600px;
+    padding: 2rem 0; }
+  .home-intro .arrow-move-down {
+    position: absolute;
+    left: 50%;
+    margin-left: -18px;
+    bottom: 2rem; }
   .home-intro h1, .home-intro h2, .home-intro h3, .home-intro p {
     text-align: center;
     position: relative;
@@ -884,8 +894,7 @@ a.btn-filtro {
   overflow: hidden; }
 
 .icono {
-  position: relative;
-  margin: 0 2rem; }
+  position: relative; }
   .icono span {
     position: absolute;
     top: 30px;

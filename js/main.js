@@ -1,4 +1,11 @@
 $(document).ready(function () {
+	//animacion para home
+	$('a').click(function(){
+    	$('html, body').animate({
+        	scrollTop: $( $.attr(this, 'href') ).offset().top
+    	}, 1000);
+    	return false;
+	});
 	//Titulo en el select
 	$('.select').selectOrDie({
 		placeholder:"¿Qué quieres hacer?"
