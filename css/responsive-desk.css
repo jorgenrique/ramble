@@ -40,6 +40,99 @@
     100% { opacity:1; }
 }
 
+#reto-prev h1 {
+    float: left;
+    width: 60%;
+}
+
+#reto-prev .image {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+#reto-prev .image img {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+.comm-reto {
+    max-width: 628px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    margin-bottom: 70px;
+}
+
+.comm-reto h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #2ab6c4;
+}
+
+.comm-reto article {
+    overflow: hidden;
+    font-weight: 400;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.comm-reto article div {
+    float: left;
+}
+
+.comm-reto article div:first-of-type {
+    float: left;
+    width: 10%;
+    height: 65px;
+    min-width: 60px;
+    margin-right: 10px
+}
+
+.comm-reto article p {
+    float: left;
+    width: 85%;
+    font-weight: 300;
+}
+
+.comm-reto article span {
+    display: block;
+    font-weight: 500;
+    color: #2ab6c4;
+}
+
+#reto-prev h5:nth-child(1) {
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    width: 40%;
+    line-height: 1.1;
+    margin: 1.67em 0px;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+#reto-prev p:nth-child(7) {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+#reto-prev p:nth-child(7) span {
+    font-weight: 500;
+}
+
+#reto-prev .definition {
+    margin-bottom: 2em;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
 
 @media screen and (min-width: 768px) {
 
@@ -186,14 +279,12 @@
         margin-bottom: 0px;
     }
 
-
-
     footer {
         width: 100%;
     }
-
-
-
+    
+    
+    
     /* PERFIL ------------------------------------------------------------- */
 
     #header_inner {
@@ -710,5 +801,59 @@
         margin: auto auto auto 20px;
         float: left;
         clear: none;
+    }
+    
+    
+    
+    /*-- RETO EXP ------------------*/
+    #reto-prev .image {
+
+    }
+
+    #reto-prev .image img {
+
+    }
+
+    .comm-reto {
+
+    }
+
+    .comm-reto h3 {
+    }
+
+    .comm-reto article {
+       
+    }
+
+    .comm-reto article div {
+        
+    }
+
+    .comm-reto article div:first-of-type {
+        
+    }
+
+    .comm-reto article p {
+        
+    }
+
+    .comm-reto article span {
+       
+    }
+
+    #reto-prev h5:nth-child(1) {
+        
+    }
+
+    #reto-prev p:nth-child(7) {
+        
+    }
+
+    #reto-prev p:nth-child(7) span {
+       
+    }
+
+    #reto-prev .definition {
+
     }
 }
