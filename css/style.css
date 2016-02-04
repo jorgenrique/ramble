@@ -302,7 +302,10 @@ footer {
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.2s ease-in-out;
-    display: none; }
+    display: none;
+    background-image: url(../img/mapa.png);
+    background-size: cover;
+    background-position: center; }
     .overlay .map .close-btn {
       position: absolute;
       color: #2ab6c4;
@@ -903,6 +906,9 @@ label {
   .perfil .interes:after {
     content: 'X';
     margin-left: 10px; }
+
+.intereses {
+  overflow: hidden; }
 
 .btn-filtro {
   border: 3px solid #2ab6c4;

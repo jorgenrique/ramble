@@ -23,12 +23,14 @@ $(document).ready(function () {
 	})
 	//Pasos hide/show function
 	$('#paso-1-sel, #paso-2-atras').click(function(){
+		$("html, body").animate({ scrollTop: 0 }, "slow");
 		$('.paso').hide();
 		$('#paso-1').show();
 		$('.pasos-sel').removeClass('active');
 		$('#paso-1-sel').addClass('active');
 	})
 	$('#paso-2-sel, #paso-1-continuar, #paso-3-atras').click(function(){
+		$("html, body").animate({ scrollTop: 0 }, "slow");
 		$('.paso').hide();
 		$('#paso-2').show();
 		$('.pasos-sel').removeClass('active');
@@ -36,6 +38,7 @@ $(document).ready(function () {
 		$('#paso-2-sel').addClass('active');
 	})
 	$('#paso-3-sel, #paso-2-continuar, #paso-4-atras').click(function(){
+		$("html, body").animate({ scrollTop: 0 }, "slow");
 		$('.paso').hide();
 		$('#paso-3').show();
 		$('.pasos-sel').removeClass('active');
@@ -44,6 +47,7 @@ $(document).ready(function () {
 		$('#paso-3-sel').addClass('active');
 	})
 	$('#paso-4-sel, #paso-3-continuar').click(function(){
+		$("html, body").animate({ scrollTop: 0 }, "slow");
 		$('.paso').hide();
 		$('#paso-4').show();
 		$('.pasos-sel').removeClass('active');

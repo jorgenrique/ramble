@@ -28,30 +28,34 @@
 				<div class="navbar-header search">
 					<img id="lupa" src='img/lupa.png'>
 					<div id="search-bar" class="nav-menu search-bar">
-						<input class='clearfix' type="text" value="Barcelona">
-						<select class="select">
-							<option value="volvo">Comida</option>
-							<option value="saab">Copas</option>
-							<option value="mercedes">Café</option>
-							<option value="audi">Música en vivo</option>
-							<option value="audi">Fiesta</option>
-							<option value="audi">Naturaleza</option>
-							<option value="audi">Historia &amp; Arte</option>
-							<option value="audi">Random</option>
-						</select>
-						<div class='clearfix call-to-action space-bottom'><a class='cta main small space-top' href="retos.html">Buscar</a></div>
+                        <div id="wrapper-head">
+                            <input class='clearfix' type="text" value="Barcelona">
+                            <select class="select">
+                                <option value="volvo">Comida</option>
+                                <option value="saab">Copas</option>
+                                <option value="mercedes">Café</option>
+                                <option value="audi">Música en vivo</option>
+                                <option value="audi">Fiesta</option>
+                                <option value="audi">Naturaleza</option>
+                                <option value="audi">Historia &amp; Arte</option>
+                                <option value="audi">Random</option>
+                            </select>
+                            <div class='clearfix call-to-action space-bottom'><a class='cta main small space-top' href="retos.html">Buscar</a></div>
+                        </div>
 					</div>
 				</div>
 				<div class="navbar-header profile closed" id='profile'>
-					<img src='img/profile_header.jpg'>
 					<svg class="svg-triangle" xmlns="http://www.w3.org/2000/svg" width="10" height="34" version="1.1">
 						<polygon points="0,13 10,13 5,21"/>
                     </svg>
+					<img src='img/profile_header.png'>
 					<ul id="menu" class='nav-menu'>
+						<li><a href='perfil.html'>Mi perfil</a></li>
 						<li><a href='ruta-crear.html'>Crear ruta</a></li>
                         <li><a href="#">Ayuda</a></li>
 						<li>FAQ</li>
 						<li>Terminos y condiciones</li>
+						<li>Ayuda</li>
 						<li>Contacto</li>
 						<li>Cerrar Sesión</li>
 					</ul>
@@ -60,22 +64,23 @@
         </nav>
     </header>
 	<section id='perfil' class='main_cont'>
-		<div class='container perfil'>
-                <div class='image'><img src='img/profile_header.jpg' alt='Foto de Perfil'></div>
-                <h3 class='name purple'>Benito Camelas</h3>
-                <p class='name'>Barcelona, Spain</p>
-                <h2 class='clearfix purple space-top'>Intereses</h2>
-                <div class='intereses'>
-                    <div class='interes purple'>Musica</div>
-                    <div class='interes purple'>Gastronomia</div>
-                    <div class='interes purple'>Natraleza</div>
-                    <div class='interes purple'>Sexo</div>
-                    <div class='interes purple'>Licor</div>
-                    <div class='interes purple'>Rock & Roll</div>
-                </div>
-                <div id="agrega-intereses" class='cta main big clearfix'>Agregar intereses</div>
+		<div class='container perfil space-bottom'>
+            <div class='image space-bottom'><img src='img/profile_header.png' alt='Foto de Perfil'></div>
+            <h3 class='name purple'>Mari Conazo</h3>
+            <p class='name'>Barcelona, Spain</p>
+			<a class='cta main big clearfix space-bottom' href='ruta-crear.html'>Crear reto</a>
+            <h2 class='clearfix purple space-top space-bottom'>Intereses</h2>
+            <div class='intereses space-bottom'>
+                <div class='interes purple'>Musica</div>
+                <div class='interes purple'>Gastronomia</div>
+                <div class='interes purple'>Natraleza</div>
+                <div class='interes purple'>Sexo</div>
+                <div class='interes purple'>Licor</div>
+                <div class='interes purple'>Rock & Roll</div>
+            </div>
+            <div id="agrega-intereses" class='cta main big clearfix'>Agregar intereses</div>
 		</div>
-		<h2 class='clearfix move-left purple space-top ret'>Retos Jugados</h2>
+		<h2 class='clearfix move-left purple space-top ret space-bottom'>Retos Jugados</h2>
 		<div class='retos space-bottom'>
 			<div class='reto white clearfix' id="reto-main">
 				<h3 class='completed'>4 en 1</h3>
