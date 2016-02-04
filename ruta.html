@@ -47,24 +47,25 @@
 					</div>
 				</div>
 				<div class="navbar-header profile closed" id='profile'>
-					<img src='img/profile_header.jpg'>
 					<svg class="svg-triangle" xmlns="http://www.w3.org/2000/svg" width="10" height="34" version="1.1">
 						<polygon points="0,13 10,13 5,21"/>
                     </svg>
+					<img src='img/profile_header.jpg'>
 					<ul id="menu" class='nav-menu'>
 						<li><a href='ruta-crear.html'>Crear ruta</a></li>
 						<li>FAQ</li>
 						<li>Terminos y condiciones</li>
+						<li>Ayuda</li>
 						<li>Contacto</li>
-						<li><a href='index.html'>Cerrar Sesión</a></li>
+						<li>Cerrar Sesión</li>
 					</ul>
 				</div>
 			</div>
         </nav>
     </header>
 	<section id='ruta' class='container main_cont'>
-			<h1 class="clearfix purple space-top">Crea tu reto</h1>
-			<p id="subtitle-ruta" class="clearfix space-bottom">Sigue los pasos para compartir tu reto</p>
+			<h1 class="clearfix purple space-top">4 en 1</h1>
+			<p id="subtitle-ruta" class="clearfix space-bottom">Una experiencia gastronómica</p>
 			<div class='flex pasos space-bottom'>
 				<div id='paso-1-sel' class='active pasos-sel'>1</div>
 				<div id='paso-2-sel' class='pasos-sel'>2</div>
@@ -73,12 +74,9 @@
 			<div class='paso' id='paso-1'>
 				<h2 class="clearfix purple">Datos generales</h2>
 				<p class='blue-light'>Si quieres jugar offline, <a href="#">descarga el PDF</a></p>
-				<div class="clearfix container-override image space-top space-bottom">
-					<img src="https://unsplash.it/1000/450/?random" alt="reto">
-					<h3 class='white'>Nombre del reto</h3>
-				</div>
-				<h3 class='purple space-top'>Empieza aqui</h3>
-				<p>Avenida SiempreViva 123</p>
+				<div class="clearfix container-override image space-top space-bottom" id="reto-main"></div>
+				<p>Empieza aqui:</p>
+				<h3 class='purple space-top'>Mirador Colon</h3>
 				<div id="mapa-paso1-ruta" class="clearfix container-override image space-top">
 					<img src="https://unsplash.it/600/300/?random" alt="reto">
 				</div>
@@ -90,37 +88,47 @@
 					<div class='paso-ruta active clearfix'>
 						<h3 class='purple'>Paso 1</h3>
 						<div class='arrow purple'>&#x25BC;</div>
-						<p class='paso-desc clearfix'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae nunc dignissim, aliquet augue eget, malesuada sem. Aenean finibus risus et neque interdum, quis rutrum leo fringilla. Sed sed enim sed eros mollis 	eleifend.</p>
+						<p class='paso-desc clearfix'>Deja el mar a tus espaldas y camina hacia arriba hasta que a tu derecha veas una fuente en medio de una gran plaza y dirigete a la fuente.</p>
 					</div>
 					<div class='paso-ruta clearfix'>
 						<h3 class='purple'>Paso 2</h3>
 						<div class='arrow purple'>&#x25BC;</div>
-						<p class='paso-desc clearfix'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae nunc dignissim, aliquet augue eget, malesuada sem. Aenean finibus risus et neque interdum, quis rutrum leo fringilla. Sed sed enim sed eros mollis	eleifend. Nunc elit ex, eleifend a tellus quis, varius accumsan felis. Pellentesque tortor dui, mollis ut velit eget, mattis aliquam neque. Praesent eget convallis tortor. Phasellus ultrices tincidunt urna, ac ornare leo suscipit ac. Maecenas fringilla magna in leo viverra, quis dignissim nibh aliquet. Nullam lacus mi, luctus nec.</p>
+						<p class='paso-desc clearfix'>Cruza la plaza y camina recto hasta llegar a la plaza San Miguel y gira a la izquierda hasta encontrar una plaza historica de la guerra civil.</p>
 					</div>
 					<div class='paso-ruta clearfix'>
 						<h3 class='purple'>Paso 3</h3>
 						<div class='arrow purple'>&#x25BC;</div>
-						<p class='paso-desc clearfix'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae nunc dignissim, aliquet augue eget, malesuada sem. Aenean finibus risus et neque interdum, quis rutrum leo fringilla.</p>
+						<p class='paso-desc clearfix'>Pasa por debajo del arco y sigue derecho hasta no poder mas, gira a la izquierda hasta la catedral.</p>
+					</div>
+					<div class='paso-ruta clearfix'>
+						<h3 class='purple'>Paso 4</h3>
+						<div class='arrow purple'>&#x25BC;</div>
+						<p class='paso-desc clearfix'>Dejando la catedral a tus espaldas, sube por la calle que tiene los dibujos de cueva hasta llegar a la plaza mas transitada de Barcelona.</p>
+					</div>
+					<div class='paso-ruta clearfix'>
+						<h3 class='purple'>Paso 5</h3>
+						<div class='arrow purple'>&#x25BC;</div>
+						<p class='paso-desc clearfix'>Subiendo por la misma calle encontraras un pasaje a tu derecha ahi se encuantra el final de tu reto.</p>
 					</div>
 				</div>
                 <div class="wrapper-cta-pasos">
                     <div class='cta secondary space-bottom small cta_2' id="paso-2-atras">< Atras</div>
                     <div class='cta secondary space-bottom small cta_2' id="paso-2-continuar">Continuar ></div>
-                </div>   
+                </div>
 			</div>
 			<div class='paso' id='paso-3'>
 				<h2 class="clearfix purple space-bottom">Valida el destino</h2>
 				<div class="selector_cont">
 					<input type="radio" id='r1' name='rb' checked/>
-					<label for='r1'>Destino 1<span></span></label>
+					<label for='r1'>Maramente<span></span></label>
 				</div>
 				<div class="selector_cont">
 					<input type="radio" id='r2' name='rb'/>
-					<label for='r2'>Destino 2<span></span></label>
+					<label for='r2'>El Nacional<span></span></label>
 				</div>
 				<div class="selector_cont space-bottom">
 					<input type="radio" id='r3' name='rb'/>
-					<label for='r3'>Destino 3<span></span></label>
+					<label for='r3'>Maldita Primavera<span></span></label>
 				</div>
                 <div class="wrapper-cta-pasos">
                     <div class='cta secondary space-bottom small cta_2' id="paso-3-atras">< Atras</div>
@@ -143,7 +151,7 @@
 			<h2 class="blue-light">¡Felicitaciones!</h2>
 			<p class="">Has completado el reto</p>
 			<div class='completo-icono'></div>
-			<h3 class=''>Nombre del reto</h3>
+			<h3 class=''>El Nacional</h3>
 			<p>Califícalo</p>
 			<input id="input-id" type="number" class="rating" min=0 max=5 step=1 data-size="xs" data-showClear=false showCaption=false>
 			<a class='cta secondary big clearfix' href='perfil.html'>Finalizar</a>

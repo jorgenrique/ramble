@@ -88,6 +88,7 @@ $(document).ready(function () {
 	$('.close-btn').click(function(){
 		$('.overlay').hide();
 		$('.account-container').hide();
+		$('.map').hide();
 	})
 	$('.overlay-bg').click(function(){
 		$('.overlay').hide();

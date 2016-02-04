@@ -40,11 +40,6 @@
     100% { opacity:1; }
 }
 
-#reto-prev h1 {
-    float: left;
-    width: 60%;
-}
-
 #reto-prev .image {
     width: 100%;
     margin-left: auto;
@@ -102,17 +97,6 @@
     display: block;
     font-weight: 500;
     color: #2ab6c4;
-}
-
-#reto-prev h5:nth-child(1) {
-    text-align: right;
-    font-family: 'Roboto', sans-serif;
-    float: right;
-    width: 40%;
-    line-height: 1.1;
-    margin: 1.67em 0px;
-    font-size: 1em;
-    font-weight: 300;
 }
 
 #reto-prev p:nth-child(7) {
@@ -281,9 +265,9 @@
     footer {
         width: 100%;
     }
-    
-    
-    
+
+
+
     /* PERFIL ------------------------------------------------------------- */
 
     #header_inner {
@@ -801,13 +785,13 @@
         float: left;
         clear: none;
     }
-    
-    
-    
+
+
+
     /*-- RETO EXP ------------------*/
     #reto-prev .image {
         float: left;
-        width: 66.6%; 
+        width: 66.6%;
     }
 
     #reto-prev .info {
@@ -822,20 +806,20 @@
         clear: none;
         margin: auto auto auto 25px;
     }
-    
+
     #reto-prev .iconos {
         float: left;
         width: 30%;
         clear: none;
         margin: auto auto auto 25px;
     }
-    
+
     #reto-prev .info-text {
        width: 45%;
         float: left;
         margin: 0px;
     }
-    
+
     .comm-reto {
         width: 45%;
         float: right;
@@ -844,7 +828,7 @@
     }
 
     .comm-reto h3 {
-        
+
     }
 
     .comm-reto article {
@@ -852,11 +836,11 @@
     }
 
     .comm-reto article div {
-        
+
     }
 
     .comm-reto article div:first-of-type {
-        
+
     }
 
     .comm-reto article p {
@@ -864,19 +848,15 @@
     }
 
     .comm-reto article span {
-       
-    }
 
-    #reto-prev h5:nth-child(1) {
-        
     }
 
     #reto-prev p:nth-child(7) {
-        
+
     }
 
     #reto-prev p:nth-child(7) span {
-       
+
     }
 
     #reto-prev .definition {

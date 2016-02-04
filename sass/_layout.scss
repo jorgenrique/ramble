@@ -280,6 +280,8 @@ footer{
         background-color:$white;
         @include shadow;
         display:none;
+        background-image:url(../img/mapa.png);
+        background-size:cover;
         .close-btn{
             position:absolute;
             color:$blue-light;
@@ -355,6 +357,7 @@ footer{
 .profile{
     div,svg{
         float:right;
+        margin-left:10px;
     }
 }
 .icons{

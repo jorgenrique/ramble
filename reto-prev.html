@@ -25,7 +25,7 @@
 <body class='mobile'>
 	<header class="col-xs-12 purple-bg clearfix" id='header_inner'>
         <nav class="navigation">
-            <div class="element logo clearfix"><a href="home.index"><img src='img/logo.png'></a></div>
+            <div class="element logo clearfix"><a href="index.html"><img src='img/logo.png'></a></div>
 			<div class="element clearfix">
 				<div class="navbar-header search">
 					<img id="lupa" src='img/lupa.png'>
@@ -45,59 +45,58 @@
 					</div>
 				</div>
 				<div class="navbar-header profile closed" id='profile'>
-					<img src='img/profile_header.jpg'>
 					<svg class="svg-triangle" xmlns="http://www.w3.org/2000/svg" width="10" height="34" version="1.1">
 						<polygon points="0,13 10,13 5,21"/>
                     </svg>
+					<div class="icono sprite-3 icono-20"></div>
 					<ul id="menu" class='nav-menu'>
 						<li><a href='ruta-crear.html'>Crear ruta</a></li>
 						<li>FAQ</li>
 						<li>Terminos y condiciones</li>
+						<li>Ayuda</li>
 						<li>Contacto</li>
-						<li><a href='index.html'>Cerrar Sesión</a></li>
+						<li>Cerrar Sesión</li>
 					</ul>
 				</div>
 			</div>
         </nav>
     </header>
 	<section id='reto-prev' class='container main_cont'>
-		<h1 class="clearfix purple space-top">Nombre del reto</h1>
-        <a href="retos.html"><h5>Volver al buscador</h5></a>
-		<div class="clearfix container-override image">
-			<img src="https://unsplash.it/600/300/?random" alt="reto">
-		</div>
+		<a href="retos.html" class='left btn-volver'>< Volver</a>
+		<h1 class="clearfix purple space-top right nombre">4 en 1</h1>
+		<div class="clearfix container-override" id="reto-main"></div>
         <section>
             <div class="info full space-bottom">
                 <div class='left'>
-                    <h2 class='purple clearfix'>Barcelona</h2>
-                    <p>Noche 18/12/2016</p>
+                    <h2 class='purple clearfix'>Comida</h2>
+                    <p>Barcelona, Eixample</p>
                 </div>
-                <p class='purple ver-mapa right'>Ver Mapa <span class="icono sprite-1 icono-15"></span></p>
+                <p class='purple ver-mapa right'>Ver Mapa<span class="icono sprite-1 icono-7"></span></p>
             </div>
-            <div class='clearfix cta-jugar-prev'><a class="cta main space-bottom big" href="#">Jugar</a></div>
+            <div class='clearfix cta-jugar-prev'><a class="cta main space-bottom big" href="ruta.html">Jugar</a></div>
             <div class='iconos clearfix space-bottom'>
-                <div class="icono sprite-1 icono-12"><span class="purple">Cafe</span></div>
-                <div class="icono sprite-1 icono-17"><span class="purple">Pareja</span></div>
-                <h2 class="icono purple">2h</h2>
-                <h2 class="icono purple">&euro;&euro;&euro;</h2>
+                <div class="icono sprite-1 icono-23"><span class="purple">Comida</span></div>
+                <div class="icono sprite-1 icono-13"><span class="purple">Copas</span></div>
+				<div class="icono sprite-1 icono-5"><span class="purple">Pareja</span></div>
+				<div class="icono sprite-1 icono-9"><span class="purple">Familia</span></div>
             </div>
         </section>
         <article class="info-text">
             <p class="definition"><span>Dirección de Origen:</span><br>Carrer major, 180</p>
-            <p class="definition">Lorem ipsum dolor sit amet, pro homero animal an. Ex reque simul dicant nec, diceret accusamus eum ne, consulatu expetendis ad sit. Eum ludus debitis honestatis ei, mel ne invidunt rationibus. Per ne consulatu consectetuer, sea ne etiam quodsi suavitate.</p>
+            <p class="definition">Experiencia gastronómica</p>
         </article>
-        <div class="container comm-reto">
+        <div class="comm-reto">
         <h3>Comentarios</h3>
         <article>
             <div><img src="img/juliana.png" alt="juliana_pic"></div>
             <p>
-                <span>Juliana López</span>Lorem ipsum dolor sit amet, pro homero animal an. Ex reque simul dicant nec, diceret accusamus eum ne, consulatu expetendis ad sit.
+                <span>Juliana López</span>Me he perdido un poco, pero el destino final valió la pena.
             </p>
         </article>
         <article>
             <div><img src="img/adrian.png" alt="adrian_pic"></div>
             <p>
-                <span>Adrian Pérez</span>Lorem ipsum dolor sit amet, pro homero animal an. 
+                <span>Adrian Pérez</span>Seguro que voy a recomendar esta ruta a mis amigos.
             </p>
         </article>
     </div>

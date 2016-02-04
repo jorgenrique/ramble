@@ -88,11 +88,30 @@
         background:url(../img/pin.png) no-repeat right center;
     }
 }
+#reto-main{
+    background-image:url(../img/retos/4-1.jpg);
+    min-height:180px;
+    background-size:cover;
+}
+#reto-5est{
+    background-image:url(../img/retos/cafe.jpg);
+}
+#reto-3est{
+    background-image:url(../img/retos/luces.jpg);
+}
+#reto-noche{
+    background-image:url(../img/retos/noche.jpg);
+}
+#reto-nat{
+    background-image:url(../img/retos/naturaleza.jpg);
+}
+#reto-asia{
+    background-image:url(../img/retos/asia.jpg);
+}
 .retos{
     width:100vw;
     .reto{
         position:relative;
-        background-image:url(https://unsplash.it/600/900/?random);
         background-size: cover;
         padding-top:3rem;
         h3,
