@@ -119,6 +119,27 @@
 }
 
 @media screen and (min-width: 768px) {
+    
+    /* HEAD HEAD H HEAD HEAD HEAD HEAD EAD HEAD HEAD HEAD HEAD HEAD HEAD HEAD HEAD HEAD HEAD HEAD */
+    #header_inner nav .element .navbar-header .search-bar input {
+        width: 30%;
+         max-width: 500px;
+    }
+    
+    #header_inner nav .element .navbar-header .search-bar .sod_select {
+        max-width: 20%;
+        max-width: 300px;
+        margin-left: 55px;
+    }
+    
+    .call-to-action {
+
+    }
+    
+    .home-intro .sod_select .sod_list_wrapper, .navbar-header .sod_select .sod_list_wrapper {
+        width: 100%;
+        max-width: 300px;
+    }
 
     .flex-atr {
          -webkit-display: flex;
@@ -776,7 +797,40 @@
 
 }
 
-@media screen and (min-width:996px) {
+@media screen and (min-width: 996px) {
+    
+    #wrapper-head {
+        display: flex;
+        -webkit-display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    
+    #header_inner nav .element .navbar-header .search-bar input {
+        width: 30%;
+        max-width: 500px;
+        margin-left: 10%;
+        float: none;
+    }
+    
+    #header_inner nav .element .navbar-header .search-bar .sod_select {
+        max-width: 15%;
+        max-width: 300px;
+        max-height: 50px;
+        margin: 45px 0px 0px 2%;
+        float: none;
+    }
+    
+    .call-to-action {
+        width: 20%;
+        margin: 20px auto auto auto;
+        padding: 0px;
+    }
+    
+    .call-to-action a {
+        width: 100%;
+    }
+    
     #perfil .intereses {
         width: 50%;
         max-width: none;
